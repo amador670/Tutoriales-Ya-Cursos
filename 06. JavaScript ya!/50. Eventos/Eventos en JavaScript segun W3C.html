@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+  <script type="text/javascript">
+   
+   /*window.addEventListener("load", inicio, false);
+
+   function inicio() {
+    document.getElementById("formulario").addEventListener("submit", validar, false);
+   }
+
+   function validar(evt) {
+    var usuario=document.getElementById("usuario").value;
+    var clave=document.getElementById("clave").value;
+
+    if (usuario.length==0 || clave.length==0){
+     alert("Ingrese un nombre de usuario o contraseña valido");
+     evt.preventDefault();
+    }
+   }*/
+
+   window.addEventListener("load", function iniciar(){
+    document.getElementById("formulario").addEventListener("submit", function validarFormulario(evt){
+
+     var usuario = document.getElementById("usuario").value;
+     var clave = document.getElementById("clave").value;
+
+     if (usuario.length == 0) {
+      alert("El nombre de usuario esta vacio, por favor ingrese un nombre");
+      evt.preventDefault();
+     }
+     else if (clave.length == 0) {
+      alert("La contraseña esta vacia, por favor ingrese un clave de usuario validad");
+      evt.preventDefault();
+     }
+
+    }, false);   
+   }, false);
+  </script>
+
+ </head>
+ <body>
+
+  <h1 style="color:red;">Eventos en JavaScript segun la W3C</h1>
+  <p style="color:red;">"Este metodo es mi favorito"</p>
+
+  <p>addEventListener() Registra un evento a un objetivo en especifico. El ObJeto especifico Puede ser un simple elemento en un archivo, el mismo  documento , una ventana, o un  XMLHttpRequest.</p>
+
+  <p>El método document.addEventListener() asigna un controlador de eventos al documento.
+   <br><br>
+   Sugerencia: Utilice el método document.removeEventListener() para eliminar un controlador de eventos que se ha adjuntado con el método addEventListener ().
+   <br><br>
+   Consejo: utilice el método element.addEventListener() para adjuntar un controlador de eventos a un elemento especificado.
+  </p>
+
+  <pre>
+      <b>Añadir un evento:</b>
+      document.addEventListener("mousemove", myFunction);
+      <b>Remover un evento:</b>
+      document.removeEventListener("mousemove", myFunction);
+    </pre>
+
+  <hr>    
+  <form method="post" action="#" id="formulario">
+   Ingrese un nombre de usuario:<br>
+   <input type="text" id="usuario" name="usuario" size="20">
+   <br>
+   Ingrese una clave validad:<br>
+   <input type="password" id="clave" name="clave" size="20">
+   <br>
+   <input type="submit" id="confirmar" name="confirmar" value="Confirmar">
+   <input type="reset" id="borrar" value="Borrar">
+  </form>
+
+ </body>
+</html>

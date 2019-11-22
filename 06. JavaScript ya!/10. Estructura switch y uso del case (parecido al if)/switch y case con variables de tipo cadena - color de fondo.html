@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de JavaScript curso gratis</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style>
+body {
+    font-size:20px; 
+    text-align: center;
+    margin-top: 50px;
+}    
+h1, h2 {
+    color: white;
+    font-family: comic sans ms;
+}
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+var color=prompt("Ingrese el nombre de un color en español", "Ejemplo: azul, rojo, amarrillo, verde...");
+    
+switch (color) {
+   case "azul": document.bgColor='blue';
+        break;
+    case "verde": document.bgColor="green";
+        break;
+    case "amarrillo": document.bgColor="#b5b500";
+        break;
+   case "negro": document.bgColor="black";
+        break;
+   case "rojo": document.bgColor="red";
+        break;
+   case "blanco": document.bgColor="white"; 
+                  document.body.style.fontFamily="comic sans ms"; 
+                  document.body.style.fontSize = "27px"; 
+                  document.body.style.color = '#0076ff'; 
+                  document.write("Hola Mundo!!. Todo salio perfecto!!");
+        break;        
+   default: document.write("El color ingresado no esta disponible en la base de datos actualmente");
+}
+</script>
+
+<h1>Switch y case ~ Ejemplo.</h1>
+<h2>Variables de tipo cadena y color de fondo</h2>
+</body>
+</html>

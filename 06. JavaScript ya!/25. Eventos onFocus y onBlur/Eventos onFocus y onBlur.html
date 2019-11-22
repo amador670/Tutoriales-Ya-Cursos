@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      function vaciarEntrada(control) {
+        control.value="";
+      }
+
+      function mostrarEntrada(control) {
+        if (control.value=="") 
+          alert("Debe ingresar los datos");
+      } 
+    </script>
+
+    <form>
+      <input type="text" value="Ingrese un nombre" onfocus="vaciarEntrada(this)" onblur="mostrarEntrada(this)">
+      <br>
+      <input type="text" value="Ingrese una edad"  onfocus="vaciarEntrada(this)" onblur="mostrarEntrada(this)">
+      <br>
+      <input type="button" value="Enviar datos">
+      <input type="reset" value="Borrar datos">
+    </form>
+
+
+    <h1 style="color:#0089ff">Evento onFocus y onBlur</h1>
+
+    <p><b>onFocus</b>, esta propiedad se aplica al <b>colocar el cursor</b> en un elemento, se ejecuta cuando un componente de nuestra web toma el foco.</p>
+
+    <p><b>onBlur</b>, esta propiedad se aplica al <b>quitar el cursor</b> de un elemento, este evento es lo contrario, se ejecuta cuando el componente pierde el foco.</p>
+
+    <p>En este ejemplo, se creamos dos input type="texto", y haremos que cuando tome el foco (onFocus), el campo de texto borre el texto que tenga escrito, y que cuando pierda el foco (onBlur) el campo de texto, nos lo avise con una ventana JavaScript.</p>
+  </body>
+</html>

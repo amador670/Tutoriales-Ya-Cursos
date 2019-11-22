@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:blue;">Array con ciclo for in</h1>
+
+  <script type="text/javascript">
+   var vector1=[10, 20, 30, 40, 50, 60, 70, 80, 90];
+   var vector2=["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+   var vector3=[10,,30,,50];//ESTE VECTOR SOLO SE USO PARA EL ULTIMO EJEMPLO. 
+
+   document.write("Primera forma de añadir un ARRAY <br>");
+
+   for (var ciclo1 in vector1){
+    document.write(vector1[ciclo1]+" - ");
+   }
+
+   document.write('<br><hr> Con un Array y el metodo "for in", si no hay un array y no esta disponible no sale undefined. <br>')
+
+   for (var ciclo2 in vector2) {
+    document.write(vector2[ciclo2]+" - ");
+   }
+
+   document.write('<br><hr> Pero si usamos un ciclo normal "for" y un vector no esta disponible aparece undefined. Ejemplo: <br>');
+
+   for (var ciclo3=0; ciclo3<vector3.length; ciclo3++){
+    document.write(vector3[ciclo3]+" - ");
+   }
+  </script>
+
+ </body>
+</html>

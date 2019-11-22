@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+      }  
+    </style>
+
+  </head>
+  <body>
+
+    <h1 style="color:orange; font-family:comic sans ms;">Array .sort() y .reverse() de forma numerica</h1>
+    <p>Para organizar un array con .sort() de forma numerica se emplea un funcion (a, b) con dos parametros para especificar un orden correcto. Ejemplo:</p>
+
+    <pre>
+     Forma ordenada:
+      var points = [40, 100, 1, 5, 25, 10];
+      points.sort(function(a, b){return a-b});
+    </pre>
+
+    <pre>
+     Forma descendiente:
+     var points = [40, 100, 1, 5, 25, 10];
+     points.sort(function(a, b){return b-a});
+    </pre>
+    
+    <p>Mas informacion sobre el metodo .sort() en 
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort">Guia de firefox sobre metodo .sort()</a>
+    </p>
+    
+    <hr>
+    <script type="text/javascript">
+      var nombres=[99, 77, 80, 101, 1, 15, 39, 25, 27, 50, 76, 91];
+
+      document.write("<i>Vector antes de ordenarlos:</i> <br>");
+      for (var orden=0; orden<nombres.length; orden++)
+      {
+        document.write(nombres[orden] + "<br>");
+      }
+
+      //ORDENADOS CON SORT de forma numerica. El algoritmo cambia y se tiene que emplear una funcion para que funcione el orden.
+      nombres.sort(
+        //Creamos una funcion con dos parametros
+        function ordenNumerico(dato1, dato2){
+          if (dato1>dato2)//si el dato1 es mayor al dato2 se ejecuta lo siguiente:
+            return 1; //Se ordena de mayor a menor (para ordenar los numeros de forma ordenada el primer condicionl siempre tiene que ser mayor, si se añade -1 y en el else 1 igual se ordena de forma corecta)
+          else 
+            return 0; //Si no se cumple la primera condicion, se ordena de menor a mayor. NOTA: Si se cambia el dato1>dato2 y se añade dato1<dato2 se ordena de forma descendiente
+        });
+
+      document.write("<hr><i>Vector ordenados de forma numerica:</i><br>");
+      for (orden=0; orden<nombres.length; orden++)
+      {
+        document.write(nombres[orden] + "<br>");
+      } 
+
+      //Ordenados de forma numerica en reversa
+      nombres.reverse();
+      document.write("<hr><i>Vector odenados de forma numerica de mayor a menor:</i><br>");
+      for (orden=0; orden<nombres.length; orden++)
+      {
+        document.write(nombres[orden]+"<br>");
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Problema</title>
+<link rel="styleSheet" a href="css.css" type="text/css">
+</head>
+<body>
+
+El objetivo de esta etiqueta es permitir la carga y ejecución de archivos de audio sin requerir un plug-in de Flash, Silverlignt o Java. Los navegadores pueden soportar diferentes formatos (así tenemos que algunos soportan mp3, wav, ogg, au)
+<br>
+<br>
+Un ejemplo de disponer el elemento audio dentro de una página sería: <b>&lt;audio src="sonido.ogg" autoplay controls loop>&lt;/audio&gt;</b>
+<br>
+<br>
+Las propiedades que podemos utilizar con la marca audio son:
+<br>
+<br>
+    <b>src:</b> La URL donde se almacena el archivo de audio. Si no definimos la URL la busca en el mismo directorio donde se almacena la página.<br><br>
+
+    <b>autoplay:</b> En caso de estar presente el archivo se ejecuta automáticamente luego de cargarse la página sin requerir la intervención del visitante.<br><br>
+
+    <b>loop:</b> El archivo de audio se ejecuta una y otra vez.<br><br>
+
+    <b>controls:</b> Indica que se deben mostrar la interface visual del control en la página (este control permite al visitante arrancar el audio, detenerlo, desplazarse etc.)<br><br>
+
+    <b>autobuffer:</b> En caso de estar presente indica que primero debe descargarse el archivo en el cliente antes de comenzar a ejecutarse.<br><br>
+
+Como no hay un formato de audio universalmente adoptado por todos los navegadores el elemento audio nos permite agregarle distintas fuentes:
+<br><br>
+<b>Ejemplo</b>
+<br>
+<br>
+&lt;audio controls autoplay loop&gt;
+<br>
+	&lt;source src="sonido.ogg"&gt;<br>
+	&lt;source src="sonido.mp3"&gt;<br>
+    &lt;source src="sonido.wav"&gt;<br>
+	&lt;source src="sonido.au"&gt;<br>
+	<!-- Aplique de flash -->
+
+<center>
+<audio src="audio1.mp3"controls loop></audio>
+</center>
+<br>
+<center>
+<audio src="audio2.mp3" controls loop></audio>
+</center>
+
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: justify;
+  margin-bottom: 3rem;
+}
+
+.elemento {
+  background: #e5e5e5;
+  /*padding: 8px;*/
+  margin: 5px 0px;
+}
+
+form {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  margin-bottom: 0.3rem;
+}
+
+form textarea {
+  min-height: 100px;
+  max-height: 300px;
+}
+
+.checkbox-property {
+  margin-bottom: 0.5rem;
+}
+
+.select-property {
+  margin-bottom: 0.5rem;
+}
+
+form input[type="file"] {
+  margin-bottom: 1.1rem;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.mas-propiedades-formulario a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.button-property input[type="submit"] {
+  margin-bottom: 10px;
+}
+
+.rounded-circle {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  height: 200px;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
+.navbar{
+  padding-bottom: 0rem;
+}
+
+.navbar-brand h4 {
+  margin-bottom: 0rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.progress {
+  margin-bottom: 15px;
+}
+
+.dropdown-nav {
+  color: white;
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+.dropdown-item-hover:hover {
+  color:rgba(0, 0, 0, 0.7);
+  background: rgba(206, 206, 206, 0.1);
+}

@@ -1,0 +1,19 @@
+#contenedor
+{
+width: 450px;
+background-color: black;
+color: white;
+border-width:2px;
+border-color: red;
+border-style: double;
+text-align:justify;
+}
+
+#contenedor:hover{
+  width:550px;
+  transition:width 1s;
+  -moz-transition:width 1s;
+  -ms-transition:width 1s;
+  -webkit-transition:width 1s;
+  -o-transition:width 1s;
+}

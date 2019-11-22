@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+    height: 
+   }
+  </style>
+
+ </head>    
+ <body>
+
+  <h1 style="color:orange; margin:0px;">Expresiones Regulares. Repeticiones y conjunto de parametros</h1>
+  <p id="mensajeIngresado" style="color:orange;"></p>
+
+  <button onclick="mensajeCode()">Click para volver a ingresar un mensaje</button>
+
+  <img src="hr_colors.png" alt="Barra <hr> de colores" style="width:100%; height:5px;"/>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero commodi excepturi vitae, dolores, fuga aliquid expedita enim, beatae dolor quas consequatur totam? Modi iste dolore voluptatum? Eum quo dignissimos dicta.</p>
+
+  <p>Rem ex illum, deleniti reiciendis illo nam officia quam. A nisi sint enim suscipit temporibus inventore optio labore mollitia nostrum natus commodi quisquam, est error neque voluptatum, saepe, voluptatibus impedit.</p>
+
+  <p>Consectetur nam distinctio ab ex magnam quos reprehenderit est nemo obcaecati illum quod totam architecto eveniet culpa fuga, possimus autem sequi, eligendi aperiam eos assumenda voluptatem sapiente. Assumenda, minima, quidem!</p>
+
+  <script type="text/javascript">
+   function mensajeCode(){
+    var mensaje=prompt("Ingrese un mensaje de 4 numeros al principio y 6 letras al final");
+    var secuencia=/^[0-9]{4}[a-zA-Z]{6}$/;
+    //De esta forma la expresion regular me solicitara el ingreso de 4 numeros al principio y 6 letras al final.
+
+    if (secuencia.test(mensaje)){
+     alert("El mensaje fue ingresado de forma correcta");
+    }
+    else{
+     alert("El mensaje no fue ingresado correctamente");
+     return mensajeCode();
+    }
+    
+    document.getElementById("mensajeIngresado").innerHTML = "El mensaje ingresado fue: " + mensaje + "<br>";
+   }
+   mensajeCode();
+  </script>
+
+ </body>
+</html>

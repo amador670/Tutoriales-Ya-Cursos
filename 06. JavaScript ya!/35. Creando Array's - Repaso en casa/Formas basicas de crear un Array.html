@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:#00ceff">Formas basicas de crear un Array (Arreglo, Vector, Matriz)</h1>
+
+  <script type="text/javascript">
+   //Formas de crear Array's
+
+   //1.- Se crea una variable y separados por una , se añaden los array que queremos mostrar.
+   document.write("Los lenguajes que quiero aprender son:" + "<br><br>");
+   
+   var arrayUno = ["Java", "Ruby", "JavaScript", "PHP y MySQL", "C++"].join("<br>")
+   document.write(arrayUno); //mostramos la variable, en este caso la que contiene nuestros array's
+
+   document.write("<hr>" + "Segundo ejemplo de un Array:" + "<br><br>");
+   //2.- Se crea una variable principal y se le añade la propiedad "new array()" de esta forma especificamos la creacion de array's
+   var arrayDos = new Array()
+   arrayDos[0] = "Las carreras que quieres estudiar son";
+   arrayDos[1] = "Ingenieria en Informatica";
+   arrayDos[2] = "Ingenieria en Sistemas";
+   arrayDos[3] = "Ingenieria en Mantenimiento.";
+   document.write (arrayDos.join(", "));
+
+   document.write("<hr>" + "Tercer ejemplo de un Array:" + "<br><br>");
+   //3.- Se crea un new array y mediante un ciclo for se muestran los array's
+   document.write("Carreras opcionales:<br>");
+   var arrayTres = new Array("Derecho", "Finanzas", "Estadistica", "Logica");
+   //Se crea un ciclo
+   for (i=0; i<arrayTres.length; i++) {
+    //Se añade el ciclo y se suma +1 para que empiece desde el 1 y no desde el 0, se añade "-" para que se separen
+    document.write(i+1 + " - ")
+    document.write(arrayTres[i]);
+    document.write("<br>");        
+   }
+   document.write("<hr>");
+  </script>
+
+ </body>
+</html>

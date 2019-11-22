@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:orange;font-family:comic sans ms;">Insertar nuevos array con el metodo array.splice()</h1>
+  <p></p>
+
+  <script type="text/javascript">
+
+   var vector=[0, 1, 2, 3, 4, 5];
+   var ciclo;
+
+   document.write("Vector inicial<br>");
+
+   for(ciclo=0; ciclo<vector.length; ciclo++)
+   {
+    document.write(vector[ciclo]+"<br>");
+   }
+
+   vector.splice(6, 1, "Nuevos array:", 10, 20, 30, 40, 50); //El primer parametro indica desde donde añadir los nuevos array y el segundo cuantos borrar, y luego añadimos los array que queremos mostrar.
+
+   //Borrar y remplazar. Se añade en los parametros el primer numero desde el array que eliminaremos y de segundo cuantos array eliminaremos, en caso de no ser existentes los array no se elimina nada. Ejemplo (2, 3) desde la posicion dos eliminara 3 array y luego añade los otros, si no existen 3 array despues de la posicion dos simplemente añade los nuevos.
+
+   document.write("<hr> El metodo splice() permite insertar valores nuevo. Ejemplo: <br>");
+
+   for (ciclo=0; ciclo<vector.length; ciclo++)
+   {
+    document.write(vector[ciclo]+"<br>");
+   }
+
+   document.write("<hr>");
+   vector.splice(0, 7, "Vectores Restantes:");
+   document.write(vector.join("<br>"));
+
+  </script>
+
+
+ </body>
+</html>

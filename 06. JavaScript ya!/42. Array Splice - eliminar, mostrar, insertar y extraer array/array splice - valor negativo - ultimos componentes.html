@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+      }  
+    </style>
+
+  </head>
+  <body>
+    
+    <h1 style="color:orange;font-family:comic sans ms;">Valor negativo del metodo array.splice()</h1>
+    <p>Eliminar valores negativos o valores finales de un array</p>
+    <hr>
+    <script type="text/javascript">
+
+      var vector=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      var ciclo;
+
+      document.write("Vector inicial<br>");
+
+      for(ciclo=0; ciclo<vector.length; ciclo++)
+      {
+        document.write(vector[ciclo]+"<br>");
+      }
+
+      vector.splice(-5, 5); //Con el metodo splice() podemos eliminar valores negativos o valores desde el final del array, en este caso el primer valor (-5, *) incica desde que posicion vamos a eiminar los array (se cuenta desde el final), y el segundo valor (-*, 5) indica cuantos array vamos a eliminar. 
+
+      document.write("<hr> El metodo splice() tambien permite quitar valores negativos o desde el final de array, en este ejemplo se eliminaran desde el final. Los vectores resultantes son: <br>");
+
+      for (ciclo=0; ciclo<vector.length; ciclo++)
+      {
+        document.write(vector[ciclo]+"<br>");
+      }
+
+    </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Problema</title>
+<link rel="styleSheet" a href="css.css" type="text/css">
+</head>
+<body>
+
+<div id="contenedor">
+Otras dos propiedades muy importantes para crear animaciones con css3 son animation-iteration-count y animation-direction:
+<br>
+<br>
+Elemento {
+<br>
+      animation-iteration-count: [cantidad de veces a repetir la animación o "infinite"];<br>
+      animation-direction: ["normal" o "alternate"];<br>
+}
+<br>
+<br>
+Si queremos que la animación se repita solo tres veces luego indicamos en la propiedad animation-iteration-count dicho valor:
+<br>
+<br>
+  -moz-animation-iteration-count: 3;
+<br>
+<br>
+En cambio si queremos que se repita siempre luego especificamos el valor "infinite":
+<br>
+<br>
+  -moz-animation-iteration-count: infinite;
+<br>
+<br>
+La propiedad animation-direction indica como debe repetirse la animación, puede tomar el valor "normal" con lo que la animación cada vez que finaliza comienza desde el principio. Pero si inicializamos con el valor "alternate" cuando finaliza la animación comienza desde el final hasta el principio:
+<br>
+<br>
+  -moz-animation-direction: alternate;
+</div>
+
+</body>
+</html>

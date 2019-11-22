@@ -1,0 +1,12 @@
+#contenedor {
+  box-shadow: 
+  30px /*Si se le pone - (menos) rueda a la izquierda*/ 
+  10px /*Si se le pone - (menos) rueda hacia arriba*/
+  20px 
+  #aaa; /*Color para la sombra*/ 
+  border-radius: 20px;  
+  background-color:#ddd;
+  width:500px;
+  padding:10px;
+  margin:20px; 
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+  </head>
+  <body>
+    
+    <h1 style="color:orange;">Array toString</h1>
+    <p>El método .toString() convierte un array en una String y devuelve el resultado. Nota: La cadena devuelta separará los elementos del array con comas.</p>
+
+    <script type="text/javascript">
+      //Creamos un array sencillo
+      var vector=new Array(10);
+      
+      for (var ciclo=0; ciclo<vector.length; ciclo++) {        
+        vector[ciclo]=parseInt(Math.random()*20);
+      }
+
+      var cadena=vector.toString(); 
+      var cadena=vector.join(" - ");
+
+      document.write(cadena);
+    </script>
+  </body>
+</html>

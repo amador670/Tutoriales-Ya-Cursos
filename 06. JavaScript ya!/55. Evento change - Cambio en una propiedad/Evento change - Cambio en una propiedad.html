@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+    <script type="text/javascript">
+      addEventListener("load", inicio, false);
+
+      function inicio(){
+        document.getElementById("checkbox").addEventListener("change", cambioCheckbox, false);
+        document.getElementById("radio1").addEventListener("change", cambioRadio, false);
+        document.getElementById("select").addEventListener("change", cambioSelect, false);
+        document.getElementById("text").addEventListener("change", cambioText, false);
+        document.getElementById("textarea").addEventListener("change", cambioTextarea, false);
+      }
+
+      function cambioCheckbox() {
+        alert("El usuario ha dado un click en un checkbox. Propiedad " + document.getElementById("checkbox").checked);
+
+      }
+      function cambioRadio() {
+        alert("El usuario ha dado click en un radio~check. Propiedad " + document.getElementById("radio1").checked);
+      }
+      function cambioSelect() {
+        alert("El usuario ha seleccionado la materia: " + document.getElementById("select").value);
+      }
+      function cambioText() {
+        alert("El usuario ha escrito lo siguiente: " + document.getElementById("text").value);
+      }
+      function cambioTextarea() {
+        alert("El usuario ha escrito el siguiente parrafo: " + document.getElementById("textarea").value);
+      }
+    </script>
+
+  </head>
+  <body>
+    <h1 style="color:#84d600;">Evento .change() en JavaScript.</h1>
+    <p>Change: Se activa+ cuando el contenido de un campo de un formulario sufre una modificación o no está ya seleccionado;</p>
+    <hr>
+
+    <form action="#">
+      - Change en checkbox: <br>
+      Seleccione el siguiente checkbox.
+      <input type="checkbox" id="checkbox" name="checkbox">
+      <br><br>
+
+      - Change en radio~check:<br>
+      Seleccione el siguiente radio~check
+      <input type="radio" id="radio1" name="radio">.
+      <br><br>
+
+      - Change en la propiedad select:<br>
+      <select name="select" id="select">
+        <option value="inicio">Eliga una carrera</option>
+        <option value="Ing Informatica">Ingeniería Informatica</option>
+        <option value="Ing Civil">Ingeniería Civil</option>
+        <option value="Menc. Matematicas">Mencion Matematicas</option>
+        <option value="Cont. Privado">Contador Privado</option>
+        <option value="Abog. Civil">Abogado Civil</option>
+      </select>
+      <br><br>
+
+      - Change en la propiedad input="text":<br>
+      Escriba un pedazo de texto.<br>
+      <input type="text" name="text" id="text">
+      <br><br>
+
+      - Change textarea:<br>
+      Escriba un párrafo en la caja de comentarios<br>
+      <textarea type="textarea" name="textarea" id="textarea" rows="6" cols="80"></textarea>
+      <br>
+      <input type='reset' value='Borrar Datos' name='reset'>
+      <input type='submit' value='Enviar Datos' name='submit'>
+    </form>
+
+  </body>
+</html>

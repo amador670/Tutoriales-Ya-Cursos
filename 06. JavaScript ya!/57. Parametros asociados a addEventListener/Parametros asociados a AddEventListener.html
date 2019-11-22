@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+   body { 
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    font-family: Arial;
+   }
+   .boton {
+    width: 50px;
+    height: 50px;
+   }
+  </style>
+
+  <script type="text/javascript">
+   window.addEventListener("load", inicio, false);
+
+   function inicio() { 
+    for (var x=0; x<=9; x++) {
+     document.getElementById("boton" + x).addEventListener("click", calcular, false);
+    }
+   }
+
+   function calcular(evento) {
+    document.getElementById("mensaje").innerHTML = "";
+    document.getElementById("resultado").innerHTML =
+     document.getElementById("resultado").innerHTML + evento.target.value;
+   }
+  </script>
+
+ </head>    
+ <body>
+
+  <h1 style="color: blue">Añadir numeros mediante botones JS.</h1>
+  <hr><br>
+  <input type="button" id="boton1" name="boton1" value="1" class="boton">
+  <input type="button" id="boton2" name="boton2" value="2" class="boton">
+  <input type="button" id="boton3" name="boton3" value="3" class="boton">
+  <br>
+  <input type="button" id="boton4" name="boton4" value="4" class="boton">
+  <input type="button" id="boton5" name="boton5" value="5" class="boton">
+  <input type="button" id="boton6" name="boton6" value="6" class="boton">
+  <br>
+  <input type="button" id="boton7" name="boton7" value="7" class="boton">
+  <input type="button" id="boton8" name="boton8" value="8" class="boton">
+  <input type="button" id="boton9" name="boton9" value="9" class="boton">
+  <br>
+  <input type="button" class="boton">
+  <input type="button" id="boton0" name="boton0" value="0" class="boton">
+  <input type="button" class="boton">
+  <br><br>
+
+  <span style="color:#0080ff;">Los numeros ingresados son: <span id="mensaje" style="color:black;">No ha presionado ningun boton. </span></span><span id="resultado"></span>
+  <hr>
+
+ </body>
+</html>

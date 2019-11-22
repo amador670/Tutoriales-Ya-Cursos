@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de JavaScript curso gratis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+
+<style>
+    body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    }
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var digito1;
+var digito2;
+
+digito1=prompt("Ingrese el primer digito", "");
+digito2=prompt("Ingrese el segundo digito", "");
+
+var suma=parseInt (digito1) + parseInt (digito2);
+var resta=parseInt (digito1) - parseInt (digito2);
+var multiplicacion=parseInt (digito1) * parseInt (digito2);
+var division=parseInt(digito1) / parseInt(digito2); 
+
+document.write("La suma de los dos digitos es: ");
+document.write(suma);
+document.write("<br>");
+document.write("La resta de los dos digitos es: ");
+document.write(resta);
+document.write("<br>");
+document.write("La multiplicacion total es: ");
+document.write(multiplicacion);
+document.write("<br>");
+document.write("La division total es: " + division);
+</script>
+
+<br><hr>
+
+Con la propiedad <b>parseInt()</b> especificamos que una cadena sera de carácter numérico, de esta forma podemos sumar dos o mas caracteres de forma correcta y evitar que se haga una suma de string o de cadenas.
+<br><br>
+Tambien esta la propiedad <b>parseFloat</b> que a diferencia de parseInt(), esta convierte a numeros con decimales y parseInt() convierte valores a enteros.
+
+
+
+</body>
+</html>

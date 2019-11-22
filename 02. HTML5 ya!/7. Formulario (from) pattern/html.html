@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Problema</title>
+<link rel="styleSheet" a href="css.css" type="text/css">
+</head>
+<body>
+
+<b>pattern</b> esta propiedad nos permite verificar si los datos ingresados en el formulario coinsiden con los caracteres solicitados. Un ejemplo clásico es determinar si un email está correctamente estructurado (sabemos que comienza con uno o más caracteres alfanuméricos, luego el carácter @ seguido de uno o más caracteres alfanuméricos, luego el carácter "." y finalmente otros caracteres alfabéticos)
+<br>
+<br>
+Veremos que para definir expresiones regulares intervienen una serie de caracteres . * +? =! : | \ / () [] {} que tienen un significado especial en la definición del lenguaje de expresiones regulares, estos tipos de caracteres suelen llamarse metacaracteres.
+<br>
+<br>
+El tema de expresión regular es bastante amplio y complejo en un principio. Lo más adecuado es iniciar con pequeños ejemplos que nos muestren el funcionamiento y la sintaxis.
+<br>
+<br>
+<b><i>EXPLICACION de los ejercicios en el formulario de HTML</i></b>
+<br>
+<br>
+<u>Entre corchetes encerramos los caracteres permitidos</u>
+<br>
+<br>
+<u>Entre llaves la cantidad de caracteres que se deben ingresar</u>
+<br>
+<br>
+Otra cosa que hay que tener muy en cuenta es que debemos agregar la propiedad required. Si no agregamos esta propiedad y el operador dejar vacío el control no valida la expresión regular que hemos dispuesto. Es decir si dejamos vacío el control no se analiza si se ingresó un número binario de ocho dígitos.
+<br>
+<br>
+<b>Ejemplo formulario numero 1. Obligatoriamente son 8 digitos de numeros entre el 1 hasta el 5</b>
+<br>
+<br>
+<!--FORMULARIO I-->
+<form action="#">
+Ingrese numeros de 8 digitos entre 1 hasta el 5:
+<input type="text" id="numero" required pattern="[0-5]{8}">
+<br>
+<input type="submit">
+</form>
+<br>
+<b>Ejemplo formulario numero 2. Ingresar entre 1 y 5 digitos de numeros, se permiten del 0 al 9</b>
+<br>
+<br>
+<!--FORMULARIO II-->
+<form action="#">
+Ingrese digitos entre 1 y 5 del 0 al 9:
+<input type="text" id="numero" required pattern="[0-9]{1,5}">
+<br>
+<br>
+<input type="submit">
+</form>
+<br>
+<b>Ejemplo formulario numero 3. Ingresar tres digitos de letras de la A a la Z en minuscula o mayuscula y ingresar 3 digitos del 0 al 9</b>
+<br>
+<!--FORMULARIO IIi-->
+<form action="#">
+Ingrese digitos entre letras y numeros
+<input type="text" id="patente" required pattern="[A-Z, a-z]{3}[0-9]{3}">
+<br>
+<input type="submit">
+</form>
+</body>
+</html>

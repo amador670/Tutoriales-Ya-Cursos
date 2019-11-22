@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de JavaScript curso gratis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style>
+body {
+    font-size:25px; 
+    text-align: center;
+    margin-top: 50px;
+    }  
+class {
+        border: outset;
+        border-color: darkblue;
+        padding: 5px;
+    }
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+  function pintarTabla(objeto, color) {
+    objeto.bgColor=color;
+}
+</script>
+
+<table border="1">
+<tr>
+<td onMouseOver="pintarTabla(this,'green')" onMouseOut="pintarTabla(this,'white')">Verde</td>
+<td onmouseover="pintarTabla(this,'yellow')" onmouseout="pintarTabla(this,'white')">Amarrillo</td>
+<td onmouseover="pintarTabla(this,'red')" onmouseout="pintarTabla(this,'white')">Rojo</td>
+</tr>
+</table>
+
+</body>
+</html>

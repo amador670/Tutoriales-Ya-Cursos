@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+  </head>
+  <body>
+    
+    <h1 style="color:orange;">Array .concat() - Crear nuevo array</h1>
+    <p>El método concat() se usa para unir dos o más arrays. Este método no cambia los arrays existentes, sino que devuelve un nuevo array.</p>
+    
+    <script type="text/javascript">
+
+      var vector=[10, 20, 30, 40];
+      //Con este metodo podemos concatenar los siguientes datos, esto se le sumara al primer array().
+      var vectorNuevo=vector.concat(100, 200, 300, 400);
+
+      document.write("El primer vector es:<br>");
+      document.write(vector.join(" - ")+"<hr>");
+    
+      document.write("El primer vector concatenado es: <br>");
+      document.write(vectorNuevo.join(" - ")+"<hr>");
+
+      //Segunda forma de añadir un array concatenado
+      document.write("Segunda forma de usar el metodo .concat() <br><br>");
+
+      var vector1=["A", "B", "C", "D", "E"];//Creamos el primer array
+      var vector2=[1, 2, 3, 4, 5]; //Creamos el array que queremos concatenar
+      var suma=vector1.concat(vector2); //Creamos una variable que va a contener el primer array.concat con el array que queremos concatenarlo
+
+      document.write("El primer vector es:<br> " + vector1.join(" - ") + "<hr>");
+      document.write("El segundo vector es:<br> " + vector2.join(" - ") + "<hr>");
+      document.write("El tercer y nuevo vector es:<br> " + suma.join(" - ") + "<hr>");
+     
+     var numerosPares = [
+      2,
+      4,
+      6,
+      8,      
+      10
+     ];
+     
+     document.write(numerosPares.join(" - "));
+     
+
+    </script>
+
+
+
+  </body>
+</html>

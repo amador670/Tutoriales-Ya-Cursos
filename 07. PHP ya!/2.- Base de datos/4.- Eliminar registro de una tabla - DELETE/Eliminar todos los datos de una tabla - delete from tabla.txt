@@ -1,0 +1,13 @@
+Indicando el where con el comando delete la condición que debe cumplir es borrar un dato especifico de una tabla. 
+
+Para borrar todos los registros de una tabla debemos llamar al comando delete de SQL sin disponer la cláusula where.
+
+Es importante tener en cuenta que la ausencia de la cláusula where en el comando delete eliminará todas las filas de la tabla.
+
+______________________________
+Ej:
+
+mysqli_query($conexion,"delete from alumnos") or
+  die("Problemas en el select:".mysqli_error($conexion));
+
+echo "Se efectuó el borrado de todos los alumnos.";

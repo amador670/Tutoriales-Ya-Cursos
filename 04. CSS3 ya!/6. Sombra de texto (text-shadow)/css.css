@@ -1,0 +1,7 @@
+#contenedor {
+  text-shadow: 
+  5px /*Desplazamiento X, derecha y abajo*/
+  5px /*Desplazamiento Y, izquierda y arriba*/
+  4px /*Color de opacidad y densidad de la sombra de las letras*/
+  #aaa /*Color de sombra para las letras*/;
+}

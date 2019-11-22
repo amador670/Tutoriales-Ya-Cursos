@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prueba de JavaScript curso gratis</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <style>
+        body {
+            font-size: 20px;
+            text-align: justify;
+            margin: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        var number1 = parseInt(prompt("Ingrese un digito", "")),
+            number2 = parseInt(prompt("Ingrese un digito", "")),
+            number3 = parseInt(prompt("Ingrese un digito", ""));
+
+        if (isNaN(number1) || isNaN(number2) || isNaN(number3)) {
+            alert("No ingresaste alguno de los valores de forma correcta");
+            document.write("Vuelva a intentarlo mas tade. No ingresaste un digite de forma correcta");
+        } else if (number1 > number2 && number1 > number3) {
+            document.write(number1 + " El primer dígito fue mayor al segundo y tercer ingreso.");
+        } else if (number2 > number3) {
+            document.write(number2 +
+                " El segundo dígito es mayor al tercer dígito y por lo tanto también es mayor que el primero");
+        } else {
+            document.write(number3 +
+                " El tercer dígito es mayor que el segundo dígito. Como resultado fue el mayor dígito ingresado");
+        }
+    </script>
+
+    <br>
+    <hr>
+    <p>La propiedad && (YY) nos permite añadir varios caracteres dentro de un condicional, este permite añadir varias
+        propiedades seguidas de &&. Ejemplo:</p>
+    <pre>
+ 	if (uno>dos && uno>tres){
+ 	document.write("El mayor es el uno")
+    }
+    </pre>
+
+    <p>De esta forma indicamos podemos indicar dos ordenes que se tienen que cumplir dentro del condicional</p>
+
+</body>
+
+</html>

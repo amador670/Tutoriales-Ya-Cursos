@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:#32d3e8">Otras formas de crear un Array ~ Forma basica.</h1>
+
+  <script type="text/javascript">
+   //1° Forma de crear un Array, Se crea una variable y añadimos la propiedad new Array(), despues los creamos uno por uno.
+   var ejemplo1 = new Array();
+   ejemplo1[0] = "Este es el ejemplo N# 1° de como crear un array";
+   ejemplo1[1] = " " + 1;
+   ejemplo1[2] = " " + 2;
+
+   //2° Forma de crear un Array, Se crea una variable y le añadimos corchetes[] de esta forma indicamos que es un array, luego consta de ir creandolos uno por uno
+   var ejemplo2 = [];
+   ejemplo2[0] = "Este es el ejemplo N# 2° de como crear un array";
+   ejemplo2[1] = " " + 1;
+   ejemplo2[2] = " " + 2;
+
+   //3° Forma de crear un Array, se crea una variable y añadimos la propiedad new Array(#) con un numero de parametros, esto indica cuantos vamos a mostrar
+   var ejemplo3 = new Array();
+   ejemplo3[0] = "Este es el ejemplo N# 3° de como crear un array";
+   ejemplo3[1] = " " + 1;
+   ejemplo3[2] = " " + 2;
+
+   //4° Forma de crear un Array, se crea una variable y añadimos new Array() y dentro de los parentesis añadimos los array's que queremos mostrar
+   var ejemplo4 = new Array ("Este es el ejemplo N# 4° de como crear un array", " JavaScript", " PHP and MySql", " HTML5", " CSS3", " " + 1, " " + 2, " " + 3);//los caracteres " " + los usamos para añadir espacio entre un array de tipo numerico
+
+   //5° Forma de crear un Array, se crea una variable y añadimos conchetes[] y adentro añadimos los array's que queremos mostrar
+   var ejemplo5 = ["Este es el ejemplo N# 5° de como crear un array", " C++", " C language", " Java", " Python", " Visual Basic", " " + 1, " " + 2, " " + 3];//los caracteres " " + los usamos para añadir espacio entre un array de tipo numerico
+
+   document.write(ejemplo1 + "<br><hr><br>");
+   document.write(ejemplo2 + "<br><hr><br>");
+   document.write(ejemplo3 + "<br><hr><br>");
+   document.write(ejemplo4 + "<br><hr><br>");
+   document.write(ejemplo5 + "<br><hr><br>");
+  </script>
+ </body>
+</html>

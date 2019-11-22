@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+   }  
+
+   #ejemploClick {
+    text-align: left;
+   }
+  </style>
+
+  <script type="text/javascript">
+
+   addEventListener("load", inicio, false);
+
+   function inicio() {
+    document.getElementById("cuadro1").addEventListener("mousedown", cuadroUno, false);
+    document.getElementById("cuadro2").addEventListener("mouseup", cuadroDos, false);
+
+    document.getElementById("ejemploClick").addEventListener("click", ejemploClick, false);
+   }
+
+   function cuadroUno() { 
+    document.getElementById("cuadro1").innerHTML="Se ha dado un click y el evento se ejecuto enseguida.";
+   }
+
+   function cuadroDos() {
+    document.getElementById("cuadro2").innerHTML="Este evento se ejecuta al soltar un click dentro del cuadro, es decir presionarlo y soltarlo adentro del cuadro.";
+   }
+
+   function ejemploClick(){
+    var ejemploClick = document.getElementById("ejemploClick");
+
+    if(ejemploClick.innerHTML == "Ejemplo click aquí."){
+     ejemploClick.innerHTML="Bienvenido a este ejemplo de JavaScript!!.";     
+    }
+    else{
+     ejemploClick.innerHTML = "Ejemplo click aquí.";
+    }
+   }
+  </script>
+
+ </head>
+ <body>
+
+  <hr><h2 style="color: #bf0000; font-family: comic sans ms;" id="ejemploClick">Ejemplo click aquí.</h2>
+
+  <hr><h2 style="color:#bf0000; font-family:comic sans ms;">Ejemplo de eventos Mousedonw y Mouseup en JavaScript</h2>
+
+  <p>1-. Mousedown. Presione el cuadro amarrillo, click sencillo en el cuadro amarrillo. Este se aplica de inmediato.</p>
+  <div style="width:300px;height:100px;background:yellow;border:double;border-color:orange;padding:3px;" id="cuadro1"></div>
+
+  <p>2-. Mouseup. Presione el cuadro naranja sin soltar el boton del mouse, no se ejecuta inmediato. Este se aplica despues de soltar el click</p>
+  <div style="width:300px;height:100px;background:orange;border:double;border-color:yellow;padding:3px;" id="cuadro2"></div>
+  <br><hr>
+ </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+  </head>
+  <body>
+
+    <h1 style="color:blue;">Array .join()</h1>
+    <p>El metodo .join() crea una cadena, en este caso hemos especificado que se añada un signo - entre cada array, si por ejemplo colocamos un &lt;br&gt; o &lt;hr&gt; o cualquier caracter se aplicara en los array creando una cadena</p>
+    <hr>
+
+    <script type="text/javascript">      
+      var ciclo=["HTML5", "CSS3", "JavaScript", "PHP y MySQL", "Java", "Visual Basic.NET", "C++", "C#", ""]
+
+      document.write("Asi es como se muestra normalmente el resultado de un Array:<br> " + ciclo + "<hr>");
+
+      var cadena=ciclo.join(" - "); //Lo que coloquemos en la propiedad JOIN se sumara a nuestro resultado
+
+      document.write("De esta forma se visualizara despues de aplicar el metodo JOIN de un Array: <br>" + cadena);
+    </script>
+
+  </body>
+</html>

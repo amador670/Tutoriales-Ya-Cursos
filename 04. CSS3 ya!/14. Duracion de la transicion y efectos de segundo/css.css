@@ -1,0 +1,27 @@
+#contenedor{
+width: 400px;
+background-color: gray;
+color: white;
+border-width:2px;
+border-color: blue;
+border-style: double;
+text-align:justify;
+padding:10px;
+
+  transition:width 1s ease,
+             background-color 1s ease 1s;
+  -moz-transition:width 1s ease,
+                  background-color 1s ease 1s;
+  -ms-transition:width 1s ease,
+                 background-color 1s ease 1s;
+  -webkit-transition:width 1s ease,
+                     background-color 1s ease 1s;
+  -o-transition:width 1s ease,
+                background-color 1s ease 1s;
+
+}
+
+#contenedor:hover{
+ background-color: #009150;
+ width: 500px;
+}

@@ -1,0 +1,22 @@
+Podemos dejar columnas vacías indicando un desplazamiento en el momento de crearla.
+
+No es necesario crear tres filas y tres columnas por fila para resolver este problema (si bien es posible), lo que debemos hacer es crear una fila y disponer dos columnas, la segundo con un desplazamiento de cuatro. La segunda fila tendrá una sola columna pero con desplazamiento de cuatro y la tercer fila es similar a la primera, Ejemplo
+
+<div class="row">
+    <div class="col-lg-4"  style="background-color:#aaa">
+       <h1>Uno</h1> 
+    </div>
+    <div class="col-lg-4 offset-lg-4"  style="background-color:#bbb">
+       <h1>Dos</h1> 
+    </div>
+</div>
+_________________
+
+PROPIEDAD
+
+offset-*
+offset-sm-*
+offset-md-*
+offset-lg-*
+offset-xl-*
+

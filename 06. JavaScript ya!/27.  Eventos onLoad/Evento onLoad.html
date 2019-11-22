@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    margin: 50px;
+    font-family: comic sans ms;
+    margin: 50px;
+   }  
+  </style>
+
+  <!--Otra forma de ejecutar el script load es el siguiente:-->
+  <!-- Al cargar la ventana (windows) hacemos que se cargue (load) una funcion, esta ejecutara un determinado codigo
+<script>
+
+window.addEventListener("load", function(){
+userFocus = document.getElementById("usuario");
+userFocus.focus();
+}, false);
+
+</script>
+-->
+
+ </head>
+ <body onload="activarControl()">
+
+  <script type="text/javascript">
+   function activarControl () {
+    document.getElementById("usuario").focus();
+   }
+  </script>
+
+  <form>
+   Ingrese un nombre:<br>
+   <input type="text" id="usuario">
+   <br><br>
+   Ingrese una edad:<br>
+   <input type="text" id="edad">
+   <br><br>
+   <input type="button" value="Enviar Datos">
+   <input type="reset" value="Borrar Datos">
+  </form>
+
+  <hr>
+  <h1 style="color:#0093ff">Evento onLoad</h1>
+
+  <p>Este evento nos permite indicar que parte se ejecutara al cargar la pagina, en este ejemplo queremos que al cargar la pagina, la parte "body" enseguida comience la carga del evento onload y ejecute la funcion que tiene dicho evento.</p>
+
+ </body>
+</html>

@@ -1,0 +1,13 @@
+﻿#estilo {
+  font-size:15px;
+  background-color:#ffffcc;
+  border-width:3px;
+  border-style:dotted;
+  border-color:#ffaa00;
+
+  
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

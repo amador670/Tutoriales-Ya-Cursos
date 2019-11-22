@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: center;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var prueba=prompt("Ingrese un caracter para la clase string:", "");
+
+      //1.- En este ejemplo nos retornara el string de forma completa
+      document.write("<hr> El caracter ingresado fue: " + prueba + "<br>");
+      //2.- La propiedad .length cuenta la cantidad de caracteres del string
+      document.write("La cantidad de letras del caracter son: " + prueba.length + "<br>");
+      //3.- La propiedad .charAt(0) nos retorna la primera letra ingresada, en este caso el parametro sera cero
+      document.write("La primera letra del caracter ingresado es: " + prueba.charAt(0) + "<br>");
+      //4.- La propiedad .charAt(x.length-1) cuenta la ultima letra del string, el parametro sera la misma variable del string ingresado con la propiedad length-1
+      document.write("La ultima letra del caracter ingresado es : " + prueba.charAt(prueba.length-1) + "<br>");
+      //5.- La propiedad substring(0, 3) nos retorna los tres primeros caracteres del string, estos se cuentan desde el 0 como los array.
+      document.write("Los primeros 3 caracteres son: " + prueba.substring(0, 3) + "<br>");
+      //6.- En este caso la propiedad .slice nos retorna los ultimos tres caracteres. Nota: substring(3, 6) era el ejemplo anterior pero retorna solo los caracteres (3, 6)
+      document.write("Los ultimos 3 caracteres son: " + prueba.slice(prueba.length-3) + "<br>");
+      //7.- Con la propiedad toUpperCase() transformamos el string a mayuscula
+      document.write("Texto transformado a mayuscula: " + prueba.toUpperCase() + "<br>");
+      //8.- Con la propiedad toLowerCase transformamos el string a minuscula
+      document.write("Texto transformado a minuscula: " + prueba.toLowerCase() + "<br><hr>")
+
+    </script>
+
+    <h1 style="color:#0080ff">Clase String ~ Propiedades</h1>
+
+    <p>Estas propiedades nos permiten modificar un string a nuestro gusto, transformarlo a mayuscula, minuscula, contar la cantidad de letras del string, entre otras propiedades</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus et magni reprehenderit fugiat officiis, laboriosam sapiente, architecto provident mollitia eius, voluptatum ipsam minus hic aut? Impedit quasi perferendis porro?</p>
+
+    <p>Exercitationem facere, ullam. Rem possimus excepturi animi amet! Laborum ex optio sequi, maiores! Rerum quasi praesentium a magni similique id nesciunt. Aspernatur perspiciatis sint veritatis similique, aut animi quos asperiores.</p>
+
+    <p>Labore maiores cum rem voluptas eum, voluptatibus quasi! Doloremque, praesentium, beatae. Porro, a corporis facilis dolorem ipsa consectetur, voluptatem animi dolore autem, harum commodi cum, vel sint numquam aspernatur. Laborum.</p>
+  </body>
+</html>

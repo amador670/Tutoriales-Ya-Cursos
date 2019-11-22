@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+  </head>
+  <body>
+
+    <h1 style="color:#e3b800">Parametros o argumentos de una funcion. Propiedad arguments[]</h1>
+    
+    <script type="text/javascript">
+      document.write("Esta es la primera forma de modificar los parametros o argumentos de una funcion:<br>");
+
+      function sumar1(uno, dos) {
+        var s=uno+dos;
+        return s;
+      }
+      document.write("El resultado es: " + sumar1(10, 5)); 
+
+      //Segunda forma para acceder a los parametros de una funcion. propiedad "arguments"
+      document.write("<hr>Esta es la segunda forma de modificar los parametros de una funcion:<br>");
+      function sumar2(uno, dos) {
+        var s2=arguments[0]+arguments[1];
+        return s2;
+      }
+      document.write("El resultado es: " + sumar2(8, 7))
+
+      //Tercera forma para acceder a los parametros de una funcion.
+      document.write("<hr>Esta es la tercera forma de modificar los parametros de una funcion:<br>");
+      function sumar3(){
+        var s3=0;
+        for (var ciclo=0; ciclo<arguments.length; ciclo++) {
+          s3=s3+arguments[ciclo];
+        }
+        return s3
+      }
+      document.write("El resultado de la suma es: " + sumar3(3, 12) + "<br>");
+      document.write("El resultado de la suma es: " + sumar3(130, 370) + "<br>");
+      document.write("El resultado de la suma es: " + sumar3(1000, 2000, 3000) + "<br>");
+     
+     document.write("<hr>");
+     
+     function usuario(nombre, apellido){
+      var nombreCompelto = nombre + " " + apellido;
+      return nombreCompelto;
+     }
+     
+     document.write(usuario("Karen", "Martinez"));
+    </script>
+
+  </body>
+</html>

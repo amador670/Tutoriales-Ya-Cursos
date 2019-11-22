@@ -1,0 +1,12 @@
+#contenedor {
+  box-shadow: 
+  30px 10px 20px red, /*Sombra numero uno*/
+  -30px -10px 20px blue; /*Sombra numero dos*/
+  border-radius: 20px;  
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  width:600px;
+  padding:10px;
+  margin:20px; 
+  text-align: justify;
+}

@@ -1,0 +1,6 @@
+//Si queremos crear la imagen mediante un color usamos las siguientes propiedades:
+//Creamos el ancho y el alto
+  $ancho = 100;
+  $alto = 30;
+//Creamos una imagen y le añadimos el ancho y el alto
+  //$imagen = imagecreate($ancho, $alto);

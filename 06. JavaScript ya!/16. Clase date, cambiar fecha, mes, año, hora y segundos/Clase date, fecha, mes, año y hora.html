@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      //Creamos una funcion que va a contener nuestro new Date
+      function mostrarFecha() {
+        //Creamos una variable, que va a tener como valor "new Date" esta propiedad es para la creacion de fechas, mese, año, hora y segundos.
+        var fecha=new Date();
+        //Empezamos añadiendo la variable + las propiedades de "new date" para crear los datos
+        document.write('Hoy es ');
+        document.write(fecha.getDate()+'/');//getDate() es para la fecha.
+        document.write((fecha.getMonth()+1)+'/');//getMonth es para el mes, como comienza desde 0 hasta el 11, añadimos +1 para que comience del 1 hasta el 12 (numeros del los meses)
+        document.write(fecha.getFullYear());//getFullYear es para los años (en este caso los 4 digitos del año)
+        
+        document.write('<br>');        
+        document.write('Es la hora ');
+        document.write(fecha.getHours()-12 +':');//getHours es para las horas, como las añade en formato 24 horas (hora militar) le restamos -12 para que sea del 1 al 12. (tipo de hora normal)
+        document.write(fecha.getMinutes()+':');//getMinutes lo añadimos para los minutos
+        document.write(fecha.getSeconds()); //getSeconds lo añadimos para los segundos
+        //document.write(fecha.getMilliseconds());//getMilliseconds es para los milisegundos 
+        
+      }
+
+      //Al finalizar llamamos a la función
+      mostrarFecha ();
+    </script>
+
+    <h1 style="color:#06e052">Propiedad new date (fechas y horas)</h1>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate amet aut recusandae consectetur nulla facilis id quis a, numquam. Voluptatum veritatis facilis blanditiis laboriosam in id aliquid voluptates impedit provident.</p>
+    
+    <p>Sint facilis sed impedit voluptatem molestiae, quia doloremque vitae, hic porro corrupti harum enim eos debitis delectus. Laborum ipsa eaque aspernatur eius reiciendis, odio, earum excepturi ex dolores, saepe id.</p>
+    
+    <p>A repellat quod sapiente natus dolores iusto, possimus omnis cupiditate nisi quis expedita molestiae fugiat atque dolorum, maxime incidunt ex perferendis odio corrupti numquam nostrum sequi minima in. Alias, autem.</p>
+
+  </body>
+</html>

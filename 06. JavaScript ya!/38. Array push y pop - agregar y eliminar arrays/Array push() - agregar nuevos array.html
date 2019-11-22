@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:orange">Array .push()</h1>
+  <p>Mediante el push solo cuenta los array introduccidos. Transforma un array añadiendole los elementos proporcionados y devolviendo la nueva longitud de los array que contienen un valor definido.</p>
+  <hr>
+  <script type="text/javascript">
+   var vector= new Array;
+   vector[1]=100;
+   vector[5]=500;
+   // vector[10]=1000; Si añadimos otro array, este se sumaria.
+
+   document.write("1.- Metodo común para añadir un Array" + "<br>");
+   document.write("Actualmente existen " + vector.length + " Array's" + "<hr>");
+
+   //Metodo array.push() ~ Ejemplo uno
+   var vector2=[];
+   vector2.push(10);
+   vector2.push(20);
+
+   document.write("2.- Metodo push(). Este es el metodo nuemro uno" + "<br>");
+   document.write("Actualmente a ingresado " + vector2.length + " array's <hr>");
+
+   //Metodo array.push() ~ Ejemplo dos
+   var vector3=[];
+   vector3.push(10, 20, 30);
+
+   document.write("3.- Metodo push(). Segundo ejemplo para ingresar un array con el metodo push() <br>");
+   document.write("Actualmente a ingresado " + vector3.length + " array's <hr>");
+
+   //Metodo array.push() ~ Probando un nuevo ejemplo
+   var vector4=[];//Creamos un array sencillo
+   vector4[0]="Fútbol"
+   vector4[1]="Beisbol"
+
+   //Si los mostramos en el documento se muestran los existentes:
+   document.write("4.- Metodo push(). Ejemplo, vectores existentes: " + vector4 + "<br>");
+   //Al crear un array con el metodo .push() se añaden a los antiguos creando una cadena. Ejemplo:
+   vector4.push("Natación", "Básquetbol");
+
+   document.write("Agregar nuevos arrays con el metodo push(), estos se suman a los vectores existentes. Ejemplo: " +  vector4.join(", "));
+
+   document.write("<br><hr><br>");
+
+  </script>
+
+ </body>
+</html>

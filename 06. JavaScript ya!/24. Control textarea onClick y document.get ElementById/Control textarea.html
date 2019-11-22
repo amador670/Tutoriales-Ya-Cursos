@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      function mostrarCaracteres () {
+        if (document.getElementById("coment").value.length>100)
+          alert("El documento contiene mas de 100 caracteres (incluye espacios)");
+        else 
+          alert("El documento contiene menos de 100 caracteres");
+      }
+    </script>
+
+    <form>
+      Ingrese un comentario:<br>
+      <textarea id="coment" rows="10" cols="50" maxlength="150"></textarea>
+      <br>
+      <input type="submit" value="Enviar datos" onclick="mostrarCaracteres()">
+      <input type="reset" value="Borrar datos">
+    </form>
+    
+    <h1 style="color:#00d310">Control textarea con onClick y document.getElementById()</h1>
+    
+    <p>De esta forma podemos añadir un "comentario" mediante un campo textarea y que nos muestre la cantidad de caracteres que se han ingresado, en este ejemplo sera al ingresar 100 caracteres o sino se ha ingresado ninguno.</p>
+
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: left;
+    margin: 50px;
+    font-family: arial;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <script type="text/javascript">
+   function redireccionar() {
+    if(window.confirm("¿Desea ingresar a TU WEB Informativa?")){
+     window.location="http://www.tuwebinformativa.net";
+    }
+    else {
+     window.alert("El acceso al sitio web oficial fue cancelada");
+    }
+   }
+  </script>
+
+  Entra ya!, accede a nuestra web oficial <a href="javascript:redireccionar()">TU WEB Informativa</a>
+
+  <h1 style="color:#2DBEE6; font-family:comic sans ms;">Propiedad windows location</h1>
+
+  <p>Esta propiedad nos permite dirigirnos a un enlace mediante un &lt;a href&gt; que va a contener una función en vez de un enlace, añadiendo en la función "window.location" nos indica que la "ventana tendrá otra localización" en este caso un enlace.</p>
+
+  <hr>
+  
+  <h2 style="color:#2DBEE6; font-family: comic sans ms;">Otro ejemplo de window location es:</h2>
+  <pre>   function redireccionar() {
+    var enlaceWeb = confirm("¿Desea ingresar al sitio web oficial?");
+
+    if(enlaceWeb == true){
+     window.location="http://www.tuwebinformativa.net";
+    } else if(enlaceWeb == false){
+     alert("El acceso a la pagina web oficial fue cancelado");
+    }
+   }</pre>
+
+ </body>
+</html>

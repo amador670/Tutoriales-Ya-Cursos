@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+  <script type="text/javascript">
+
+   function validar() {
+    var usuario=document.getElementById("user").value;
+    var clave=document.getElementById("clave").value;
+
+    if (usuario.length==0) {
+     alert("El nombre de usuario esta vacio, por favor ingrese un nombre");
+     return false;     
+    }
+    else if(clave.length==0) {
+     alert("La contraseña esta vacia, por favor ingrese un clave de usuario");
+     return false;     
+    }
+    else {
+     return true;
+    }
+   }
+  </script>
+
+ </head>
+ <body>
+
+  <h1 style="color:green;">Eventos en JavaScript - Eventos en HTML</h1>
+  <p>Mediante este metodo los eventos de JavaScript son llamados en HTML mediante funciones, empleando en la parte de HTML propiedades como "onclick", "onsubmit", entre otras, que permiten la ejecucion de dichas funciones, esta forma es muy rapida y sencilla, ya que no lleva tantos procesos en JavaScript, pero no es la mejor, ya que parte de nuestro codigo HTML va a contener codigo JS y a la hora de modificarlo sera mas el codigo que hay que modificar.</p>
+  <hr>
+  <form method="post" action="#" onsubmit="validar();" id="formulario">
+   Ingrese su nombre:<br>
+   <input type="text" id="user" name="usuario" size="20">
+   <br>
+   Ingrese su clave:<br>
+   <input type="password" id="clave" name="clave" size="20">
+   <br>
+   <input type="submit" id="confirmar" name="confirmar" value="Confirmar">
+   <input type="reset" id="borrar" name="borrar" value="Borrar Datos">
+  </form>
+
+ </body>
+</html>

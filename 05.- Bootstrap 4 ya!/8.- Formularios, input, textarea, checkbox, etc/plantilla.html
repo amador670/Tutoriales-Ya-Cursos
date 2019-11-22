@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bootstrap 4 Guide</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="../framework-y-estilos-css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../framework-y-estilos-css/estilos.css">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Tutorial de Bootstrap v4</h3>
+      <div class="row">
+
+        <div class="elemento col-12" style="background: none;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in, nam quia soluta ducimus totam, distinctio quaerat dolorum quidem illum ipsa omnis qui nesciunt voluptates eligendi nisi quibusdam neque iste!</p>   
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in, nam quia soluta ducimus totam, distinctio quaerat dolorum quidem illum ipsa omnis qui nesciunt voluptates eligendi nisi quibusdam neque iste!</p>   
+        </div>
+      </div>
+
+      <div class="row align-items-center justify-content-between">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <form action="#" class="">
+            <h2>Contactanos</h2>
+            <div class="form-group">
+              <label for="nombre">Ingrese su nombre:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+              <small class="form-text text-muted">Nombre propio.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Ingrese su contraseña:</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
+              <small class="form-text text-muted">Minimo 6 digitos.</small>
+            </div>
+
+            <fieldset disabled>
+              <label for="invitado">Estatus de usuario:</label>
+              <input type="text" class="form-control" id="invitado" name="invitado" placeholder="Invitado">
+            </fieldset>
+
+            <div class="form-group">
+              <label for="comentario">Ingrese un comentario:</label>
+              <textarea class="form-control" name="comentario" id="comentario"  placeholder="Comentario"></textarea>
+            </div>
+
+            <div class="checkbox-property">
+              <h5>¿Qué opinas de nuestro sitio web?</h5>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="checkbox1" name="checkbox"> 
+                <label for="checkbox1" class="form-check-label">Bueno</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="checkbox2" name="checkbox"> 
+                <label for="checkbox2" class="form-check-label">Regular</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input disabled type="radio" class="form-check-input" id="checkbox3" name="checkbox"> 
+                <label for="checkbox3" class="form-check-label">Malo</label>
+              </div>
+            </div>
+
+            <div class="select-property">
+              <h5>¿De que país eres?</h5>
+              <select class="form-control" name="" id="">              
+                <option value="">Venezuela</option>
+                <option value="">Colombia</option>
+                <option value="">España</option>
+                <option value="">Estados Unidos</option>
+                <option value="">Otro...</option>
+              </select>
+            </div>
+
+            <div class="form-group file-property">
+              <label for="archivoInput">Seleccione un archivo:</label>
+              <input type="file" class="form-control-file" id="archivoInput" name="archivoSeleccionado">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar Datos</button>
+          </form>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis similique sunt hic exercitationem magni corporis repudiandae reiciendis cum non quam quae placeat reprehenderit a quidem, minus libero quia dolore ipsa.</p>
+          <p>Repellat numquam possimus deleniti impedit rem dolor odio beatae consectetur est qui iste repudiandae voluptatem aliquid recusandae veniam ad aut libero ut, blanditiis maxime. Incidunt, placeat omnis inventore voluptates nemo?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, soluta eligendi iure officiis. Dolore cumque quam, quod vitae repellendus explicabo veritatis architecto minus possimus, aperiam voluptate, unde labore quos dolorum!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nemo tempora officia cupiditate, voluptatibus commodi aspernatur earum nisi eaque, provident corrupti hic excepturi deserunt obcaecati inventore temporibus facilis illum deleniti!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quam, accusantium quisquam incidunt, impedit assumenda doloremque recusandae, voluptatibus laborum deleniti nesciunt eaque, quasi. A laboriosam quibusdam, repellat tempora et dignissimos.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="mas-propiedades-formulario col-12">
+          <h2>Mas propiedades para formularios:</h2>
+
+          <a href="https://www.tutorialesprogramacionya.com/bootstrap4ya/detalleconcepto.php?punto=26&codigo=26&inicio=20">Formulario Horizontal</a>
+
+          <a href="https://www.tutorialesprogramacionya.com/bootstrap4ya/detalleconcepto.php?punto=27&codigo=27&inicio=20">Formulario en una linea</a>
+
+          <a href="https://www.tutorialesprogramacionya.com/bootstrap4ya/detalleconcepto.php?punto=28&codigo=28&inicio=20">Tamaño de los controles de formulario</a>
+        </div>
+      </div>    
+
+      <hr>
+      <div class="row">
+        <div class="button-property col-12">
+          <h2>Botones</h2>
+          <input type="submit" class="btn btn-success btn-sm" value="Boton pequeño">
+
+          <input type="submit" class="btn btn-success" value="Boton mediano">
+
+          <input type="submit" class="btn btn-success btn-lg" value="Boton Grande">
+
+          <input type="submit" class="btn btn-success btn-block" value="Boton que abarca todo el contenido">
+
+          <input type="submit" class="btn btn-danger" disabled="disabled" value="Boton Disabled">          
+        </div>    
+
+
+        <div class="btn-group btn-group-sm button-property col-12">
+          <input type="submit" class="btn btn-info" value="1">
+          <input type="submit" class="btn btn-info" value="2">
+          <input type="submit" class="btn btn-info" value="3">
+          <input type="submit" class="btn btn-info" value="4">
+          <input type="submit" class="btn btn-info" value="5">
+        </div>   
+
+        <div class="btn-group button-property col-12">
+          <input type="submit" class="btn btn-warning" value="1">
+          <input type="submit" class="btn btn-warning" value="2">
+          <input type="submit" class="btn btn-warning" value="3">
+          <input type="submit" class="btn btn-warning" value="4">
+          <input type="submit" class="btn btn-warning" value="5">
+        </div>    
+
+        <div class="btn-group btn-group-lg button-property col-12">
+          <input type="submit" class="btn btn-success" value="1">
+          <input type="submit" class="btn btn-success" value="2">
+          <input type="submit" class="btn btn-success" value="3">
+          <input type="submit" class="btn btn-success" value="4">
+          <input type="submit" class="btn btn-success" value="5">
+        </div>                  
+
+        <div class="btn-group-vertical col-auto">
+          <input type="submit" class="btn btn-primary" value="A">
+          <input type="submit" class="btn btn-primary" value="m">
+          <input type="submit" class="btn btn-primary" value="a">
+          <input type="submit" class="btn btn-primary" value="d">
+          <input type="submit" class="btn btn-primary" value="o">
+          <input type="submit" class="btn btn-primary" value="r">
+        </div>   
+
+      </div>
+    </div>
+
+  </body>
+</html>

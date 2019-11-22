@@ -1,0 +1,61 @@
+#contenedor{
+  position:relative;
+  border-radius: 10px;  
+  background-color:white;
+  color: blue;
+  width:400px;
+  padding:10px;
+  margin:10px;
+/*este es mozilla*/
+  -moz-animation-name: animacion1;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+/*este es chromer y webkit*/
+  -webkit-animation-name: animacion1;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+/*este es opera*/
+  -o-animation-name: animacion1;
+  -o-animation-duration: 4s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate;
+}
+
+@-moz-keyframes animacion1 {
+  from {
+    left:30px;
+    background-color:white;
+ }
+
+  to {
+    left:300px; 
+    background-color:purple;
+    color: white;
+  }
+}
+
+@-webkit-keyframes animacion1 {
+  from {
+    left:30px;
+    background-color:white;
+  }
+  to {
+    left:300px; 
+    background-color:purple;
+    color: white;
+  }
+}
+
+@-o-keyframes animacion1 {
+  from {
+    left:30px;
+    background-color:white;
+  }
+  to {
+    left:300px; 
+    background-color:purple;
+    color: white;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+  
+      }  
+    </style>
+
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      function convertirNumeros(x)
+      {
+        switch(x) 
+        {
+          case 0: return "cero";
+          case 1: return "uno";
+          case 2: return "dos";
+          case 3: return "tres";
+          case 4: return "cuatro";
+          case 5: return "cinco";
+          default: return "Digito incorrecto. Por favor ingresar un digito entre el 1 y el 5";
+        }
+      }
+
+      var valor=parseInt(prompt("Ingrese un valor entre el numero 1 y el 5 (Solo de forma numerica)", ""));
+      var resultado=convertirNumeros(valor);    
+      document.write("El numero que usted selecciono fue el " + resultado);
+    </script>
+    
+    <h1 style="color:#00baff">Convertir numeros con switch de forma rapida</h1>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, delectus fugit facere hic sapiente earum eos quis similique molestias, consequatur repellat, minima explicabo enim libero architecto cumque atque necessitatibus debitis.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non debitis placeat, delectus voluptas ipsum illum praesentium. Fuga reiciendis possimus doloribus numquam odit consectetur, optio earum accusantium, sit necessitatibus ducimus consequuntur.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim atque libero, illum soluta temporibus nisi! Eos nemo sunt vero consequatur deleniti! Quibusdam veritatis tenetur quaerat sunt, porro distinctio cum id!</p>
+  </body>
+</html>

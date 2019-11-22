@@ -1,0 +1,27 @@
+<html>
+<head>
+
+<title>position absolute con Z-index</title>
+<link rel="StyleSheet" href="estilos.css" type="text/css"> 
+
+</head>
+<body>
+<h2>
+Hemos visto que cuando disponemos uno o más elementos con la propiedad position con valor absolute los mismos salen del flujo del resto de elementos de la página.
+<br><br>
+En esta situación debemos inicializar la propiedad z-index con un valor entero, el mismo indica cual tiene prioridad para visualizarse. El valor más grande indica cual tiene prioridad para visualizarse. Es decir que el navegador imprime los elementos con posición absoluta del valor más bajo al más alto.
+<br><br>
+Con el valor z-index podemos configurar diferentes imagenes o archivos y posicionarlos uno encima de otro, podemos elegir cual tendra prioridad para visualizarse encima que el otro.
+</h2>
+<div id="caja1">
+<p>Esta es la primer caja.</p>
+</div>
+<div id="caja2">
+<p>Esta es la segunda caja. Que fue posicionada con z-index para que estuviera de primera</p>
+</div>
+<div id="caja3">
+<p>Esta es la tercer caja.</p>
+</div>
+
+</body>
+</html>

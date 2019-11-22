@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Problema</title>
+<link rel="styleSheet" a href="css.css" type="text/css">
+</head>
+<body>
+
+Un editor de línea (input type="text"). Podemos ingresar cualquier cadena en su interior. Con html5 podemos mostrarle una lista de sugerencias (no obligatorias como un select) para que el operador pueda seleccionarla sin tener que tipear todos los caracteres.
+<br>
+<br>
+Esta funcionalidad se logra creando un elemento nuevo llamado datalist con todas sus opciones y luego asociándolo a un control input de tipo text.
+<br>
+<br>
+Una cosa importante es notar que cuando disponemos un datalist no es obligatorio que el usuario seleccione uno de esos elementos, el usuario tiene la libertad de ingresar otra cadena de caracteres distinta a la propuesta por el datalist.
+<br>
+<br>
+Ejemplo
+<br>
+<br>
+
+<form action="#">
+Ingrese el nombre de su marca preferida para celulares: 
+<input type="text" id="marcas-de-telefono" list="listanavegadores">
+<datalist id="listanavegadores">
+<option label="Samsung" value="samsung">
+<option label="iPhos toch" value="apple">
+<option label="HTC one" value="htc">
+<option label="Operador chino" value="chino">
+<option label="Nokia" value="nokia">
+<option label="Windows phone" value="windows">
+<option label="Alcatel" value="alcatel">
+<option label="American phone" value="american">
+<option label="Movistar" value="movistar">
+<option label="Movilnet" value="movilnet">
+</datalist>
+<br>
+<input type="submit" value="confirmar">
+</form>
+
+</body>
+</html>

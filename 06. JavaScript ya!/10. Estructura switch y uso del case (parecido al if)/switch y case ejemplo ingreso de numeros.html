@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de JavaScript curso gratis</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<style>
+    body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    }
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+var valor=parseInt(prompt("Ingrese un valor del 1 al 5.", ""));
+
+if (isNaN(valor)){
+   alert("Error. Debe ingresar un numero. Los caracteres alfabeticos no estan permitidos");
+   document.write("Si desea continuar por favor ingresar un numero del 1 al 5");
+} else {   
+
+//Se inicia el condicional switch
+switch (valor)/*Se añade la variable que va a contener el condicional*/ 
+   {
+   case 1: document.write("Usted ingreso el numero 1");//Sentencias a ejecutar si la expresión tiene como valor a case 1 
+        break;
+   case 2: document.write("Usted ingreso el numero 2");//Sentencias a ejecutar si la expresión tiene como valor a case 2
+        break;
+   case 3: document.write("Usted ingreso el numero 3");//Sentencias a ejecutar si la expresión tiene como valor a case 2 
+        break;
+   case 4: document.write("Usted ingreso el numero 4");//Sentencias a ejecutar si la expresión tiene como valor a case 4
+        break;
+   case 5: document.write("Usted ingreso el numero 5");//Sentencias a ejecutar si la expresión tiene como valor a case 5
+        break;
+   default: document.write("Debe ingresar un valor del numero 1 al numero 5."); ////Sentencias a ejecutar si la expresión no tiene ninguno de los otros valores
+   }      
+ }
+</script>
+<hr>
+<h3>Break.</h3>
+   <p>
+   La palabra break es opcional, pero si no la ponemos a partir de que se encuentre coincidencia con un valor se ejecutarán todas las sentencias relacionadas con este y todas las siguientes. Es decir, si en nuestro esquema anterior no hubiese ningún break y la expresión valiese case1, se ejecutarían las sentencias relacionadas con case1 y también las relacionadas con case2, case3 y default.
+   <br>
+   <br>
+   También es opcional la opción default u opción por defecto. 
+   </p>
+
+</body>
+</html>

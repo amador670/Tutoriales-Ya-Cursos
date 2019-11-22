@@ -1,0 +1,9 @@
+
+    border-primary
+    border-success
+    border-info
+    border-warning
+    border-danger
+    border-secondary
+    border-dark
+    border-light

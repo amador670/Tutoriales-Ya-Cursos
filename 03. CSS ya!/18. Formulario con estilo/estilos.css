@@ -1,0 +1,22 @@
+﻿#formulario {
+  width:500px; 
+  margin:10px;
+  background-color:#ffe;
+  border:3px solid black;
+  padding:10px;
+  
+}
+
+#formulario label {
+  width:120px; 
+  float:left;
+  font-family:verdana;
+  font-size:14px;
+  color:#000000;
+  
+}
+.botonsubmit {
+  color:yellow;
+  background-color:#000000;
+  border: 2px groove yellow;
+}

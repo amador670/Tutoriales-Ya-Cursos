@@ -1,0 +1,20 @@
+En esta ocasion vamos añadir :
+padding-top 
+padding-right 
+padding-bottom 
+padding-left
+
+En un solo atributo "padding". Ejemplo:
+#div {
+padding: 5px 10px 12px 3px;
+}
+___________________________________
+Si indicamos un único valor se aplica a los cuatro lados, Ejemplo:
+#div {
+padding: 1px;
+}
+___________________________________
+Si indicamos dos valores, el primero se aplica a la parte superior e inferior y el segundo valor a los lados izquierdo y derecho:
+#div {
+padding: 5px 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+   body{
+    font-size: 20px;
+    color: deepskyblue;
+    text-align: center;
+    font-family: Comic Sans MS;
+    margin: 0px 100px;
+   }
+
+  </style>
+
+  <script>
+   function mostrarCumpleaños(){
+    function cumpleaños(x){
+     switch(x)
+       {
+      case 1: return "Enero";
+      case 2: return "Febrero";
+      case 3: return "Marzo";
+      case 4: return "Abril";
+      case 5: return "Mayo";
+      case 6: return "Junio";
+      case 7: return "Julio";
+      case 8: return "Agosto";
+      case 9: return "Septiembre";
+      case 10: return "Octubre";
+      case 11: return "Noviembre";
+      case 12: return "Diciembre";
+      default: return "El mes ingresado es incorrecto";
+     }
+    }
+
+    var dia=parseInt(prompt("Ingrese su día de nacimiento", "Solo numeros")),
+        mes=parseInt(prompt("Ingrese su mes de nacimiento", "Solo numeros")),
+        years=parseInt(prompt("Ingrese su año de nacimiento", "Solo numeros"));
+
+    var resultado = cumpleaños(mes);
+
+    document.write("Su cumpleaño es " + dia + " del mes de " + resultado + " y nacio el año" + years);
+   }
+  </script>
+ </head>
+ <body>
+
+  <h2>Día, Mes y Año de forma dinamica con prompt y parametros de una funcion</h2>
+
+  <script>
+   mostrarCumpleaños();
+  </script>
+
+ </body>
+</html>

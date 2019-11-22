@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prueba de JavaScript curso gratis</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+        body {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 50px;
+            font-family: comic sans ms;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="color:blue">Ciclo do while</h1>
+
+    <p>La diferencia con el bucle <b>while</b> radica en que este evalúa la condición al principio, y si esta no se
+        cumple, el código que está encerrado dentro del cuerpo no se ejecuta. En cambio, el bucle do-while evalúa la
+        condición para seguir ejecutándose luego de haber ejecutado el código dentro de su cuerpo; es decir, siempre se
+        ejecuta por lo menos una vez el código.1</p>
+    <hr>
+
+    <script type="text/javascript">
+        //Creamos una variable
+        var valor;
+        do { //Iniciamos el ciclo do
+            valor = prompt("Ingrese un numero entre el 1 y el 999. Ingrese el 0 para finalizar", ""); //El "valor" sera el introducido en la función prompt
+            valor = parseInt(valor); //Sera de carácter numérico
+
+            document.write("El valor " + valor + " tiene "); //Imprimimos los datos dentro del ciclo para que se repita varias veces
+
+            //Creamos un condicional
+            if (valor == 0) //Si es 0 entonces:
+            {
+                document.write("un error. Ingresar un numero entre el 1 y el 999")
+            }
+            //Creamos un else 
+            //Añadimos varias condicionales
+            else if (valor > 0 && valor <= 9) {
+                document.write("un dígitos numéricos (menor de 10)");
+            } else if (valor >= 10 && valor <= 99) {
+                document.write("dos dígitos numéricos (menor de 100)");
+            } else if (valor >= 100 && valor <= 999) {
+                document.write("tres dígitos numéricos (menor a 1000)");
+            } else {
+                document.write("un error. Por favor ingrese un caracteres validos")
+            }
+            document.write('<br>');
+        } while (valor != 0);
+        //El ciclo do necesita ejecutarse al menos una vez. Si el valor es diferente a 0 se ejecuta el ciclo, si se introduce 0 se finaliza enseguida porque se especifico que se ejecutara si es diferente a 0, el ciclo se ejecuta al menos una vez. 
+    </script>
+</body>
+
+</html>

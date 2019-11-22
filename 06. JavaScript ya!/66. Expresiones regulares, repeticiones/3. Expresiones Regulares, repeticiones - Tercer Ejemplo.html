@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: left;
+    margin: 50px;
+    font-family: comic sans ms;
+   }
+  </style>
+
+ </head>    
+ <h1 style="color:orange;">Expresiones Regulares, repeticiones ~ 3° Ejemplo</h1>
+ <p id="mensajeIngresado" style="color:orange;"></p>
+ <hr style="color:orange;">
+
+ <b>{x}</b>: Indica el numero exacto de caracteres que debe tener un mensaje o alerta introduccido por el usuario. Ejemplo {10}, el mensaje obligatoriamente debe tener 10 caracteres. 
+ <br><br>
+ <b>{x,y}</b>: Indica que el mensaje puede tener la cantidad de caracteres de {x} hasta {y}. Ejemplo {10,20} el mensaje puede tener entre 10 y 20 caracteres, mínimo 10 y máximo 20. 
+ <br><br>
+ <b>{x,}</b>: Indica que el mensaje debe tener desde la cantidad {x,} en adelante, mínimo el carácter introduccido en {x,}. Ejemplo {10,} debe tener mínimo 10 caracteres, de 10 en adelante.
+ <hr>
+
+ Existen patrones de búsqueda que son de uso muy frecuentes, existen varias sintaxis abreviadas y son las siguientes:
+ <br><br>
+
+ <pre>
+  \D  [^0-9].              Especifica que permite ingreso de numeros y que tienen que ir al principio<br>
+  \w  [a-zA-Z0-9_].        Especifica que permite ingreso de letras en minusculas y mayusculas y numeros<br>
+  \W  [^a-zA-Z0-9_].       Especifica que permite ingreso de letras y numeros al principio<br>
+  \s  [Espacio en blanco]. Significa el uso de espacios en blanco dentro del mensaje
+  </pre>
+
+ <script type="text/javascript">
+  function mensajeBienvenida(){
+   var mensaje=prompt("Ingrese un mensaje entre 10 y 20 caracteres con espacio a cada lado");
+   var secuencia=/\s\w{10,20}\s/;
+
+   if (secuencia.test(mensaje)){
+    alert("El mensaje fue ingresado de forma correcta");
+   }
+   else{
+    alert("El mensaje no fue ingresado correctamente");
+   }      
+
+   document.getElementById("mensajeIngresado").innerHTML = "El mensaje ingresado fue: " + mensaje + "<br>";;
+  }
+  mensajeBienvenida()
+ </script>
+</html>

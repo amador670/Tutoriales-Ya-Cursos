@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+  </head>
+  <body>
+
+    <h1 style="color:#0093ff">Propiedad window.navigator ~ Propiedades del navegador</h1>
+
+    <p>Advertencia !!!
+      <br>
+      La información del objeto de navegación a menudo puede ser engañosa y no debe utilizarse para detectar versiones de navegador porque:
+      <br><br>
+      1.-Diferentes navegadores pueden usar el mismo nombre.
+      <br>
+      2.- Los datos del navegador pueden ser cambiados por el propietario del navegador.
+      <br>
+      3.- Algunos navegadores se identifican erróneamente para evitar las pruebas del sitio.
+      <br>
+      4.- Los navegadores no pueden informar de nuevos sistemas operativos, publicados más tarde que el navegador</p>
+    <hr>
+    
+    <script type="text/javascript">
+      document.write("1.- platform, Retorna el nombre de la plataforma del navegador (sistema operativo). Resultado: " + navigator.platform + "<br>");
+      document.write("2.- language, Almacena el lenguaje del navegador. Resultado: " + navigator.language + "<br>");
+      document.write("3.- onLine, Devuelve true si el explorador está en línea. Resultado: " + navigator.onLine + "<br>");
+      document.write("4.- appName, Almacena el nombre oficial del navegador. Resultado: " + navigator.appName + ". Netscape es el nombre de la aplicación para IE11, Chrome, Firefox y Safari." + "<br>");
+      document.write("5.- appCodeName, Almacena el nombre de código de la aplicación del explorador. Resultado: " + navigator.appCodeName + ". Mozilla, es el nombre de código de la aplicación para Chrome, Firefox, IE, Safari y Opera." + "<br>");
+      document.write("6.- product, Retorna el nombre del producto del motor del navegador. Resultado: " + navigator.product + "<br>");
+      document.write("7.- appVersion, Almacena la version del navegador. Resultado: " + navigator.appVersion + "<br>");
+      document.write("8.- userAgent, Devuelve el encabezado user-agent enviado por el explorador al servidor. Resultado: " + navigator.userAgent + "<br>")
+      document.write("9.- cookieEnabled, Almacena si las Coockies estan activadas en el navegador. Resultado: " + navigator.cookieEnabled + "<br>");
+      document.write("10.- javaEnable(), Devuelve true si el navegador tiene Java activado. Resultado " + navigator.javaEnabled() + "<br>"); 
+      document.write("11.- Plugins, Almacena un array de los plugin cargados en el navegador. Resultado: " + navigator.plugins.length + "<br>");
+    </script>
+
+
+  </body>
+</html>

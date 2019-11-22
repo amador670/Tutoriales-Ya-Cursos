@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;        
+      }  
+    </style>
+
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      //Creamos una variable llamada "valor" que va a contener un prompt con parseInt
+      var valor=parseInt(prompt("Ingrese un valor entre el numero 1 y el 5 (Solo de forma numerica)", ""));
+      
+      //Creamos una funcion con un parametro (x)
+      function convertirNumeros(x)
+      //Si el parametro (x) es igual a 1 aparece un resultado, y asi sucesivamente.
+      {
+        if (x==1)
+          return "uno";
+        else if (x==2)
+          return "dos";
+        else if (x==3)
+          return "tres";
+        else if (x==4)
+          return "cuatro";
+        else if (x==5)
+          return "cinco";
+        else 
+          return "El numero ingresado no esta entre el 1 y el 5";
+      }
+
+      //Luego añadimos una variable resultado que va a contener la funcion "convertirNumeros" con el parametro "valor", los numeros ingresados en el prompt se aplicaran a la funcion
+      var resultado=convertirNumeros(valor);
+      //Al final se imprimen los datos ingresados
+      document.write("El numero que usted ingreso fue el: " + resultado);
+    </script>
+    
+    <h1 style="color:#00a7ff">Funcion con condicional - Convertir numeros de forma rapida</h1>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nemo iusto, ad illo odio est, cumque magni assumenda officia optio quidem quibusdam cum ut, velit perferendis itaque. Voluptate, quasi, voluptatem!</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa optio, quasi repellat odio, nisi nulla alias corporis mollitia deserunt cupiditate dolores nihil iste quo ratione enim porro quidem, architecto eveniet!</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae aut sequi labore eum, ducimus hic dolorum suscipit quibusdam fugit ut expedita at placeat optio commodi veritatis temporibus blanditiis harum adipisci?</p>
+
+  </body>
+</html>

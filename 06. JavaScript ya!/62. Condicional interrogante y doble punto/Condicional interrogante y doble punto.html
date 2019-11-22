@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }
+  </style>
+
+ </head>    
+ <body>
+
+  <h1 style="color:#FF0059">Condicional ? y instrucción : </h1>
+  <p>
+   Operador condicional ? and : 
+   <br><br>
+   Este condicional es usado como modo de abreviar y hacer mas compacto el codigo, evitando de esta forma menos lineas de codigo. 
+   <br><br>
+   El operador tiene la siguiente sintaxis:
+   <br><br>
+   condición ? instrucción 1 : instrucción 2;
+   <br><br>
+   La condición es lo primero que indicamos a la izquierda del carácter "?". La condición siempre debe generar un resultado de tipo boolean (true/false)
+   <br><br>
+   Si la condición se verifica verdadera se ejecuta la instrucción 1, que es la que se encuentra a la izquierda del carácter ":", en cambio si la condición se verifica false se ejecuta la instrucción 2.
+  </p>
+
+  <script type="text/javascript">
+
+   var dato1=parseInt(prompt("Ingrese el primer numero", "")),
+       dato2=parseInt(prompt("Ingrese el segundo numero", "")),
+       mayor; 
+
+   //Si "dato1" es mayor a "dato2" se ejecuta un condicional ? que dice que el resultado sera mayor=dato1 sino se ejecuta una intruccin else mediante : que dice que mayor=dato2
+   dato1 > dato2 ? mayor=dato1 : mayor=dato2;
+
+   document.write("El mayor de los dos numeros ingresados es: " + mayor);
+  </script>
+
+ </body>
+</html>

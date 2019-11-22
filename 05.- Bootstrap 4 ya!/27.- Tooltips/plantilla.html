@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 4 Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <link rel="stylesheet" href="../framework-y-estilos-css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../framework-y-estilos-css/estilos.css">
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <h1>Tutorial de Bootstrap v4</h1>
+    <div class="row">
+
+      <div class="col-12 col-md-12">
+        <h2>Tooltips</h2>
+        <a data-toggle="mensaje" data-placement="top" title="Google Inc." href="https://www.google.com" class="btn btn-success">Google</a>
+
+        <a data-toggle="mensaje" data-placement="bottom" title="Microsoft" href="https://www.bing.com" class="btn btn-success ml-2">Bing</a>
+
+        <a data-toggle="mensaje" data-placement="left" title="Yahoo Inc" href="https://www.yahoo.com" class="btn btn-success ml-2">Yahoo</a>
+
+        <a data-toggle="mensaje" data-placement="right" title="Opera Mini" href="https://www.operamini.com" class="btn btn-success ml-2">Opera
+          Mini</a>
+      </div>
+
+
+      <div class="mt-3 col-12 col-md-12 mt-5">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ea tenetur dolore eaque ipsa iure eveniet sit
+          ut quidem ipsam consectetur sapiente eos, accusamus perferendis, quisquam tempora itaque magnam odio.
+
+          <a data-toggle="mensaje" data-placement="right" ´ title=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis sint itaque eos omnis cupiditate optio, eum labore aliquid quaerat cum ex perspiciatis minus sit facere. Obcaecati nemo vero voluptatum odio."
+            href="https://www.operamini.com" class="btn btn-info">Boton Lorem</a>
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam, consectetur illum non eos debitis
+          nulla libero architecto doloribus quia vitae neque, culpa pariatur tempore sequi laudantium recusandae maxime
+          quam?
+        </p>
+
+        <div class="col-12">
+          <a data-toggle="mensaje" data-placement="right" data-html="true" title="<p style='font-size:1.5rem;color:red'> <em>G</em>oogle</p>"
+            href="https://www.google.com" class="btn btn-success">Google
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../framework-y-estilos-css/bootstrap/js/jquery-slim.min.js"></script>
+  <script src="../framework-y-estilos-css/bootstrap/js/popper.min.js"></script>
+  <script src="../framework-y-estilos-css/bootstrap/js/bootstrap.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="mensaje"]').tooltip();
+    });
+  </script>
+</body>
+
+</html>

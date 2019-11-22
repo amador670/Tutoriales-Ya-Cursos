@@ -1,0 +1,52 @@
+#contenedor 
+{
+  position:relative;
+  border-radius: 10px;  
+  background-color:black;
+  color: red;
+  width:300px;
+  padding:10px;
+  margin:10px;
+  -moz-animation-name: animacion1;
+  -moz-animation-duration: 4s;
+  -webkit-animation-name: animacion1;
+  -webkit-animation-duration: 4s;
+  -o-animation-name: animacion1;
+  -o-animation-duration: 4s;
+}
+
+@-moz-keyframes animacion1 {
+  from {
+    left:30px;
+    background-color:black;
+  }
+  to {
+    left:300px; 
+    background-color:white;
+    color: blue;
+  }
+}
+
+@-webkit-keyframes animacion1 {
+  from {
+    left:30px;
+    background-color:black;
+  }
+  to {
+    left:300px; 
+    background-color:white;
+    color: blue;
+  }
+}
+
+@-o-keyframes animacion1 {
+  from {
+    left:30px;
+    background-color:black;
+  }
+  to {
+    left:300px; 
+    background-color:white;
+    color: blue;
+  }
+}

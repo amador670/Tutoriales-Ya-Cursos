@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+    body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+  }
+</style>
+
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    //Creamos una funcion y adentro va a contener un switch, esta propiedad nos permite crear una lista y mediante los numeros (case 1, case 2, etc...) poder acceder a ella y mostrar los datos ingresados en ese "case"
+    function convertirMeses(x) {
+      switch (x) {
+        case 1:
+          return "enero ";
+        case 2:
+          return "febrero ";
+        case 3:
+          return "marzo ";
+        case 4:
+          return "abril ";
+        case 5:
+          return "mayo ";
+        case 6:
+          return "junio ";
+        case 7:
+          return "julio ";
+        case 8:
+          return "agosto ";
+        case 9:
+          return "septiembre ";
+        case 10:
+          return "octubre ";
+        case 11:
+          return "noviembre ";
+        case 12:
+          return "diciembre ";
+        default:
+          return "Mes invalido ";
+      }
+    }
+
+    //Creamos tres variables, sus valores seran mediante un prompt y cada una sera de caracter numerico (parseInt)
+    var dia = parseInt(prompt("Ingrese el dia actual", "")),
+      valor = parseInt(prompt("Ingrese el mes actual (Solo digito)", "")),
+      año = parseInt(prompt("Ingrese el año actual", ""));
+
+    //Creamos una variable resultado  
+    var resultado;
+    //Esta sera igual a la funcion "convertirMeses(valor)"
+    resultado = convertirMeses(valor);
+
+    //Al final imprimimos los datos del dia (prompt), resultado (funcion, convertirMeses) y el año (prompt)
+    document.write("Buen día amigo, hoy es " + dia + " de " + resultado + " del año " + año);
+  </script>
+
+  <h1 style="color:#0089ff">Funcion con propiedad switch</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ipsum, iusto, animi voluptas fuga esse velit
+    debitis magni provident necessitatibus perferendis expedita, nemo vero vel eius sapiente corrupti sed accusantium.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt fugiat asperiores modi quaerat eligendi minima
+    ipsa porro voluptates cum dicta hic, consectetur expedita maiores incidunt quidem reiciendis sint ea atque.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nisi fuga a perferendis iure dicta unde ab vel
+    labore eveniet, at alias dignissimos eos aliquam suscipit sapiente eius rerum dolores!</p>
+
+</body>
+
+</html>

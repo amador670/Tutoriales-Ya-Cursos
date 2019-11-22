@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de JavaScript curso gratis</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<style>
+    body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    }
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+var dia, mes, año;
+dia=prompt("Ingrese el día que desea archivar", "");
+mes=prompt("Ingrese el mes que desea archivar (SOLO NUMERO. No letra)", "");
+año=prompt("Ingrese el año que desea archivar", "");
+dia=parseInt(dia);
+mes=parseInt(mes);
+año=parseInt(año);
+
+if (mes==1 || mes==2 || mes==3)
+{  
+	document.write("El mes ingresado es parte del trimestre del año, es decir. Es uno de los primeros meses");
+} else {
+	document.write("El mes ingresado no es parte del trimestre anual.");
+}
+</script>
+
+<p>El operador logico || (o) nos permite añadir varias propiedades y indicar que algunas de ellas se van a cumplir, con este operador indicamos que si no se cumple una funcion se cumple la otra y asi sucesivamente. Ejemplo</p>
+
+<pre>
+if (nombre=="Amador Jose" || apellido=="Martinez Rivera") {
+    document.write("Tu eres el creador de la pagina. Bienvendo!!");
+} else {
+    document.write("Bienvenido a mi sitio web");
+}
+
+</pre>
+
+
+</body>
+</html>

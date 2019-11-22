@@ -1,0 +1,8 @@
+﻿#recuadro1{
+  border-radius: 20px;  
+  background-color:black;
+  color: white;
+  width:500px;
+  padding:10px;
+  text-align: justify; 
+}

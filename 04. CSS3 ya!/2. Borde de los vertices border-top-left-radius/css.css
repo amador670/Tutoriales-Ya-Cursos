@@ -1,0 +1,11 @@
+#recuadro1{
+  border-top-left-radius: 20px;  
+  border-top-right-radius: 20px;  
+  background-color:blue;
+  color:yellow;
+  width:500px;
+  padding:10px;
+display:center;
+
+}
+

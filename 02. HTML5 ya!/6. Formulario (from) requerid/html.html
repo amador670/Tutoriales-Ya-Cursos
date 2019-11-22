@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Problema</title>
+<link rel="styleSheet" a href="css.css" type="text/css">
+</head>
+<body>
+
+Otra facilidad que nos proporciona HTML5 es la validación de contenido obligatorio de un control en un formulario. Mediante la propiedad <b>required</b> obligamos e informamos al operador que el control se debe cargar obligatoriamente (por ejemplo contraseñas, nombres de usarios, entre otros). La propiedad required es para un control HTML que necesitamos que el operador no deje vacío.
+<br>
+<br>
+Luego si el operador carga el nombre e intenta dejar la clave vacía al presionar el botón para enviar los datos al servidor (submit) el navegador se encargará de mostrar un mensaje indicando que no debe dejar el campo de la clave vacía:
+<br>
+<br>
+Ejemplo de un formulario que en sus caracteres posee la propiedad required.
+<br>
+<br>
+      <form action="#">
+      Usuario:<br>
+      <input type="text" id="usuario" required>
+      <br>
+      Clave:<br>
+      <input type="password" id="clave" required>
+      <br>
+      <br>
+      <input type="submit">
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      //Se crea una variable y mediante un prompt de caracter numerico solicitamos el ingreso de un numero
+      var loteria=parseInt(prompt("Ingrese un numero entre el 1 y el 50", "")),
+      //Se crea otra variable, esta sera de caracter numerico y le añadimos la propiedad Math.random(), de esta forma nos dara un resultado aletorio
+          numero=parseInt(Math.random()*50)+1;
+      
+      //Si el numero(math.random) es igual al numero(loteria) entonces nos da el siguiente resultado.
+      if (numero==loteria) {
+        document.write("Usted ha ganado la loteria, el numero ganador fue: " + numero + " felicidades");
+      } else {
+        document.write("Lo sentimos. Usted a perdido, el numero ganador fue " + numero + " vuelva a intentarlo en otra ocasión. El numero elegido por usted fue " + loteria);
+      }
+    </script>
+
+    <h1 style="color:#00b1ff">Propiedad Math.random()</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque culpa iste quod, itaque voluptates asperiores libero, illum nesciunt sunt error pariatur illo, molestias esse provident iusto maiores perspiciatis doloribus alias!</p>
+
+    <p>Tenetur excepturi eligendi beatae natus neque minima assumenda quod fugiat a voluptatem vitae accusamus cupiditate voluptates nostrum explicabo autem adipisci nam earum voluptas repudiandae, rerum voluptatum mollitia aspernatur sunt? Aliquam!</p>
+
+    <p>Nisi ullam, dolor explicabo officia saepe repudiandae sed eveniet, sit esse nostrum minus, beatae quam accusamus sequi, tenetur expedita optio doloremque error! Sapiente sint, dolores aliquid maiores ipsam iusto amet?</p>
+  </body>
+</html>

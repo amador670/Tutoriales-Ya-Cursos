@@ -1,0 +1,18 @@
+En esta ocasion vamos añadir :
+font-family
+font-size
+font-style
+font-weight
+font-variant 
+
+En un solo atributo "font". Podemos indicar en cualquier orden 
+font-weight, font-style, font-variant y luego los valores obligatorios font-size y font-family en ese orden.
+Es importante recordar que font-size y font-family deben ser los últimos valores inicializados y en ese orden. No debemos separar por coma.
+
+#div1 {
+font: bold italic 25px verdana;
+}
+___________________________
+#div2 {
+    font: italic bold 25px sans-serif;
+}

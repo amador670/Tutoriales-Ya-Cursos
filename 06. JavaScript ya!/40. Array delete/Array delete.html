@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: Comic sans ms;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color: #003bff;">Delete array[#]</h1>
+
+
+  <script type="text/javascript">
+
+   var vector=new Array;
+   vector[0]="Este es el mensaje numero 1 del vector.";
+   vector[1]="Este es el mensaje numero 2 del vector.";
+   vector[2]="Este es el mensaje numero 3 del vector.";
+   vector[3]="Este es el mensaje numero 4 del vector.";
+   vector[4]="Este es el mensaje numero 5 del vector.";
+
+   //SI AÑADIMOS UN CICLO FOR LA COMA , SE QUITARA DE NUESTRO ARRAY.
+   for (i=0; i<vector.length; i++) {
+    document.write(vector[i] + "<br>");
+   }
+
+   document.write("<i> El numero total de los vectores introducidos es de: " + vector.length + " </i><hr>");
+   //Con la propiedad delete podemos eliminar un array en especifico
+   delete vector[4];
+
+   document.write("Propiedad delete." + "<br>" + "La cantidad de vectores aparecera igual con la propiedad <b>length</b> pero si solicitamos el vector introducido no se mostrara, si no que aparecera el valor... ");
+
+   document.write(vector[4] + "<br>" + "Actualmente hay: " + vector.length);
+
+   document.write("<br><hr>");
+
+   var familia = [
+    "Sarah",
+    "Karen",
+    "Maximo",
+    "Magdalena",
+    "Yo Amador :D",
+    "Desconocido"
+   ];
+
+   document.write("Mi familia es: " + "<br><br>");
+
+   for(i=0; i<familia.length; i++){
+    document.write(i+1 + ".- " + familia[i] + "<br>");
+   }
+
+   /*Eliminamos el Array 5 - Dato del Array "Desconocido" */
+   delete familia[5];
+   document.write("<hr>" + familia.join("<br>"));
+  </script>
+
+ </body>
+</html>

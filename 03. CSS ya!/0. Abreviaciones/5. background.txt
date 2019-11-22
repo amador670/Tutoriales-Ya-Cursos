@@ -1,0 +1,19 @@
+En esta ocasion vamos añadir :
+background-color 
+background-image 
+background-repeat 
+background-attachment 
+background-position
+
+En un solo atributo "background". Ejemplo:
+#div {  
+background: #cccccc url(fondo.jpg) repeat;
+}
+_____________________________________________
+#div2{
+background url(fondo.png) no-repeat fixed #0000ff;
+}
+_____________________________________________
+#div3{  
+background: top repeat-y scroll url(fondo.png);
+}

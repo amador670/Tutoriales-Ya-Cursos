@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+    body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms; 
+      }  
+    </style>
+
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    function counterCheck() {
+      var cant = 0;
+      if (document.getElementById("number1").checked == true) {
+        cant++;
+      }
+      if (document.getElementById("number2").checked == true) {
+        cant++;
+      }
+      if (document.getElementById("number3").checked == true) {
+        cant++
+      }
+      if (document.getElementById("number4").checked == true) {
+        cant++
+      }
+      
+      if (cant == 0) {
+        alert("No se ingreso ningun lenguaje de programacion")
+      } else {
+        alert("Usted ha ingresado " + cant + " lenguajes de programacion.");
+      }
+    }
+  </script>
+
+  <form>
+    <input type="checkbox" id="number1">C++
+    <br>
+    <input type="checkbox" id="number2">JavaScript
+    <br>
+    <input type="checkbox" id="number3">PHP and MySQL
+    <br>
+    <input type="checkbox" id="number4">Java
+    <br><br>
+    <input type="button" value="Enviar" onclick="counterCheck()">
+    <input type="reset" value="Borrar">
+  </form>
+
+  <hr>
+
+  <h1 style="color:#00b1ff">Propiedad checked multiple - checkbox</h1>
+
+  <p>Con la propiedad .checked podemos dar una funcion al selecionar un checkbox, en este ejemplo al seleccionar un
+    checkbox se sumara "1"</p>
+
+  <p><b>Nota.</b> Se añade ==true para indicar que la propiedad estara activa, o que contara como un checkbox, en dado
+    caso que sea ==false, no se contara al enviar los datos.</p>
+
+</body>
+
+</html>

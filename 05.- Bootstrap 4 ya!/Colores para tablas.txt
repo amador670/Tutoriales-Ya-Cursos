@@ -1,0 +1,11 @@
+Las 9 clases de colores para las tablas son:
+
+    1.-table-danger (Representa una acción peligrosa)
+    2.-table-warning (Representa una advertencia)
+    3.-table-info (Representa una información)
+    4.-table-success (Representa algo exitoso)
+    5.-table-primary (Representa algo importante)
+    6.-table-secondary (Representa algo no tan importante)
+    7.-table-dark
+    8.-table-light
+    9.-table-active

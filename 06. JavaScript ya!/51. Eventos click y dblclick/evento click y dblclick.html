@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+  <script type="text/javascript">
+   window.addEventListener("load", function alertaBotones(){
+
+    document.getElementById("boton1").addEventListener("click", function botonUno(){
+     alert("Se hizo click en el primer boton");
+    }, false);
+
+    document.getElementById("boton2").addEventListener("dblclick", function botonDos(){
+     alert("Se hizo doble click en el segundo boton");
+    }, false);
+
+   }, false);
+  </script>
+
+ </head>
+ <body>
+
+  <h1 style="color:blue">Evento click y dblclick mediante botones</h1>
+  <p>
+   El evento click se ejecuta al darle click a cualquier elemento (texto, boton, imagen) y el evento dblclick se ejecuta al darle doble click a cualquier elemento.
+  </p>    
+  <hr>
+
+  Click en el primer boton: <br>
+  <input type="button" value="Primer boton" id="boton1">
+  <br><br>
+  Doble click en el segundo boton: <br>
+  <input type="button" value="Segundo boton" id="boton2">
+
+ </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:#00b1ff">Array no densos o dispersos.</h1>
+
+  <p>Este tipo de array se les llama array no densos o dispersos ya que no tenemos todas las componentes contiguas ocupadas.</p>
+  <hr>
+
+  <script type="text/javascript">
+   //Creamos un array vacio.
+   var vector = [];
+   vector[3] = 300;
+   vector[6] = 600;
+   vector[9] = 900;
+   vector[12] = 1200;
+   vector[15] = 1500;
+
+   document.write("Array con atributo length. Existen actualmente " + vector.length + " vectores <br>"); 
+
+   for (var ciclo=1; ciclo<vector.length; ciclo++){
+    document.write(vector[ciclo] + "<br>");
+   }
+  </script>
+
+ </body>
+</html>

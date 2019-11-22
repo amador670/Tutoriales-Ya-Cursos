@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Problema</title>
+<link rel="styleSheet" a href="css.css" type="text/css">
+
+<script>
+  addEventListener('load',inicio,false);
+
+  function inicio()
+  {
+    document.getElementById('rango').addEventListener('change',cambioRango,false);
+  }
+
+  function cambioRango()
+  {    
+    document.getElementById('temp').innerHTML=document.getElementById('rango').value;
+  }
+</script>  
+
+</head>
+<body>
+
+barra de selección de un valor. En lugar de utilizar un control input de tipo text para cargar un número podemos seleccionar el valor con el mouse o con el dedo según el dispositivo que estamos utilizando.
+<br>
+<br>
+Para definir una barra de selección inicializamos la propiedad type con el valor range. Luego podemos inicializar las propiedades min y max para fijar el valor mínimo y el máximo.
+<br>
+<br>
+Con este ejemplo hacemos que nos aparezca una barra la cual va a contener el valor numerico que le coloquemos. 
+<br>
+<br>
+Ejemplo:
+<br>
+<br>
+<form action="#">
+Seleccione un valor numerico:
+<input type="range" id="rango" min="0" max="100">
+<span id="temp">0</span>
+<br>
+<input type="submit" value="confirmar">
+</form>
+</body>
+</html>

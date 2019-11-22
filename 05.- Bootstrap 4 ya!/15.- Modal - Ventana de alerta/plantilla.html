@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 4 Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <link rel="stylesheet" href="../framework-y-estilos-css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../framework-y-estilos-css/estilos.css">
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <h1>Tutorial de Bootstrap v4</h1>
+    <div class="row">
+
+      <div class="col-12 col-md">
+        <h2>Modal - Ventana de alerta</h2>
+
+        <hr>
+        <h3>Modal sencillo</h3>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#dialogo1">Abrir ventana de diálogo</button>
+
+        <div class="modal fade" id="dialogo1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Cabecera -->
+              <div class="modal-header">
+                <h4 class="modal-title">Titulo del dialogo</h4>
+                <button type="button" class="close text-danger" data-dismiss="modal">x</button>
+              </div>
+
+              <!-- cuerpo del diálogo -->
+              <div class="modal-body">
+                <p>
+                  Contenido del diálogo.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae illum, laborum tempore culpa cum
+                  magni sit in necessitatibus reprehenderit dolorum explicabo earum totam enim, quod magnam, accusamus
+                  nemo fuga.
+                </p>
+              </div>
+
+              <!-- pie del diálogo -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <h3>Modal - Tamaño grande y pequeño, ambos centrados</h3>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#dialogo2">Abrir ventana de diálogo
+          grande</button>
+
+        <div class="modal fade" id="dialogo2">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+              <!-- Cabecera -->
+              <div class="modal-header">
+                <h4 class="modal-title">Titulo del dialogo</h4>
+                <button type="button" class="close text-danger" data-dismiss="modal">x</button>
+              </div>
+
+              <!-- cuerpo del diálogo -->
+              <div class="modal-body">
+                <p>
+                  Contenido del diálogo.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae illum, laborum tempore culpa cum
+                  magni sit in necessitatibus
+                  reprehenderit dolorum explicabo earum totam enim, quod magnam, accusamus nemo fuga.
+                </p>
+              </div>
+
+              <!-- pie del diálogo -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#dialogo3">Abrir ventana de diálogo
+          pequeño</button>
+
+        <div class="modal fade" id="dialogo3">
+          <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+
+              <!-- Cabecera -->
+              <div class="modal-header">
+                <h4 class="modal-title">Titulo del dialogo</h4>
+                <button type="button" class="close text-danger" data-dismiss="modal">x</button>
+              </div>
+
+              <!-- cuerpo del diálogo -->
+              <div class="modal-body">
+                <p>
+                  Contenido del diálogo.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae illum, laborum tempore culpa cum
+                  magni sit in necessitatibus
+                  reprehenderit dolorum explicabo earum totam enim, quod magnam, accusamus nemo fuga.
+                </p>
+              </div>
+
+              <!-- pie del diálogo -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <h3>Modal - Con sistema de grillas bootstrap</h3>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#dialogo4">Abrir ventana de diálogo
+          con grillas</button>
+
+        <div class="modal fade" id="dialogo4">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+              <!-- Cabecera -->
+              <div class="modal-header">
+                <h4 class="modal-title">Titulo del dialogo</h4>
+                <button type="button" class="close text-danger" data-dismiss="modal">x</button>
+              </div>
+
+              <!-- cuerpo del diálogo -->
+              <div class="modal-body">
+
+                <div class="container-fluid">
+                  <div class="row justify-content-around">
+
+                    <div class="col-12 col-md">
+                      <div class="card text-center">
+                        <div class="card-body">
+                          <h4 class="card-title">Producto 1 </h4>
+                          <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit iusto incidunt praesentium
+                            voluptates similique sequi ratione
+                            odio ipsum eius molestiae sunt, eligendi, beatae perspiciatis? Expedita saepe culpa sequi
+                            repudiandae ipsa?
+                          </p>
+                          <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod illo eos alias commodi neque
+                            incidunt, cumque totam veritatis
+                            possimus vero magnam voluptates qui nihil non? Nemo placeat repudiandae aperiam minima!
+                          </p>
+                          <a href="#" class="btn btn-success">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md">
+                      <div class="card text-center">
+                        <div class="card-body">
+                          <h4 class="card-title">Producto 2</h4>
+                          <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda veniam ratione numquam
+                            ipsam? Aut, veniam, distinctio
+                            voluptate illo inventore minus facilis dolore ex dicta unde quis porro soluta corporis
+                            laudantium!
+                          </p>
+                          <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto velit provident repellat
+                            libero? Eveniet corrupti officia
+                            vero, officiis voluptates dolores consectetur ratione cupiditate a ad voluptatum
+                            perferendis itaque, illo deserunt.
+                          </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- pie del diálogo -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#dialogo5">Abrir ventana de diálogo
+          con login</button>
+
+        <div class="modal fade" id="dialogo5">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+              <!-- Cabecera -->
+              <div class="modal-header">
+                <h4 class="modal-title">Titulo del dialogo</h4>
+                <button type="button" class="close text-danger" data-dismiss="modal">x</button>
+              </div>
+
+              <!-- cuerpo del diálogo -->
+              <div class="modal-body">
+                <div class="container-fluid">
+
+                  <form>
+                    <div class="row form-group">
+                      <label for="usuario" class="col-lg-3 col-form-label">Nombre de usuario:</label>
+                      <div class="col-lg-9">
+                        <input type="text" class="form-control" id="usuario">
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <label for="clave" class="col-lg-3 col-form-label">Ingrese clave:</label>
+                      <div class="col-lg-9">
+                        <input type="password" class="form-control" id="clave">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="offset-lg-3 col-lg-9">
+                        <button type="submit" class="btn btn-success">Entrar</button>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+
+              <!-- pie del diálogo -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../framework-y-estilos-css/bootstrap/js/jquery-slim.min.js"></script>
+  <script src="../framework-y-estilos-css/bootstrap/js/popper.min.js"></script>
+  <script src="../framework-y-estilos-css/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

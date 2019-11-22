@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+
+   #numero {
+    color: #01DFD7;
+   }
+  </style>
+
+  <script type="text/javascript">
+
+   window.addEventListener("load", function load(){
+
+    /*------Este valor se aplica si se pasa el cursor sobre el texto--------*/
+    document.getElementById("titulo").addEventListener("mousemove", incrementarNumero, false);
+    document.getElementById("valorNumerico").addEventListener("mousemove", incrementarNumero, false);
+
+    function incrementarNumero(){
+     var numero = parseInt(document.getElementById("numero").innerHTML);
+     numero++;
+     document.getElementById("numero").innerHTML = numero;
+    }
+    
+   }, false);
+
+  </script>
+
+ </head>
+ <body>
+
+  <h1 id="titulo" style="color:#01DFD7; font-family:comic sans ms;">Evento mousemove.</h1>
+  <p>
+   El evento <b>mousemove</b> se produce cada vez que se mueve el puntero del mouse sobre el elemento div.
+   <br><br>
+   El evento <b>mouseenter</b> sólo se produce cuando el puntero del ratón entra en el elemento div.
+   <br><br>
+   El evento <b>mouseover</b>  se produce cuando el puntero del ratón entra en el elemento div y sus elementos secundarios.
+   <br><br>
+   Definicion completa en <a href="http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousemove_over_enter">w3schools evento mousemove</a>
+  </p>
+  <hr>
+
+  <h2 id="valorNumerico">Mueva el cursor sobre este mensaje para incrementar el valor: <span id="numero">0</span></h2>
+
+ </body>
+</html>

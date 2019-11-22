@@ -1,0 +1,8 @@
+
+    bg-primary
+    bg-secondary
+    bg-info
+    bg-warning
+    bg-danger
+    bg-dark
+    bg-light

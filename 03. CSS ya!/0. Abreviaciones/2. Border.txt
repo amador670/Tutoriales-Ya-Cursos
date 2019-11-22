@@ -1,0 +1,27 @@
+En esta ocasion vamos añadir :
+border-width 
+border-style 
+border-color
+
+En un solo atributo "border". Ejemplo:
+#div{
+border:1px solid #ff0000;
+}
+______________________________________
+Por otro lado podemos inicializar cada borde con: 
+border-top
+border-right
+border-bottom
+border-left
+
+Debemos indicar el border 
+(top/right/bottom/left): border-width/ border-style/ border-color/
+
+Ejemplo: 
+#div1{
+  border:5px solid #ff0000;
+}
+#div2{
+  border-top:1px solid #ffff00;
+  border-bottom:1px solid #ffff00;
+}

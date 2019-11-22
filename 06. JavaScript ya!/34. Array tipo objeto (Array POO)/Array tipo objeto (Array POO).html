@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+    <script type="text/javascript">
+      //Creamos una funcion con dos parametros (direccion, titulo)
+      function enlace(direccion, titulo) { 
+        this.direccion=direccion; //objeto para la direccion del enlace
+        this.titulo=titulo;       //objeto para el titulo del enlace 
+        this.retornarEnlace=retornarEnlace; //objeto que mostrara los enlaces
+      }
+      //Creamos una funcion para retornar un enlace 
+      function retornarEnlace() {
+        //var cadena sera igual a un <a href=""> + el enlace y el titulo
+        var cadena="<a href=" + this.direccion + ">" + this.titulo + "</a>";
+        return cadena;
+      }
+    </script>
+
+  </head>
+  <body>
+
+    <h1 style="color:red">Array tipo objeto (POO)</h1>
+
+    <script type="text/javascript">
+      //Creamos un array, cada uno tendra dos parametros, el primero el enlace y el segundo el titulo, de esta forma la funcion retornarEnlace() añade el link y el titulo
+      var contenedor=new Array(/*iba un 3, pero no fue necesario*/);
+      //Se crean nuevos enlaces "new enlace", estos estan enlazado con la "funcion enlace()", ya que sus parametros son "direccion y titulo"
+      contenedor[0]=new enlace('http://www.google.com','Google');
+      contenedor[1]=new enlace('http://www.facebook.com','Facebook');
+      contenedor[2]=new enlace('http://www.yahoo.com','Yahoo');
+
+      for (var f=0; f<contenedor.length; f++) {
+        document.write("Enlace añadido mediante Array de tipo objeto: " + contenedor[f].retornarEnlace());
+        document.write("<br>");
+      }
+    </script>
+
+    <hr><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis doloribus deserunt alias reprehenderit aspernatur animi autem dolor voluptate quia impedit explicabo, voluptatum sapiente illum quas voluptas nihil fuga vel dolorum?</p>
+
+    <p>Tenetur, distinctio voluptas quia voluptatibus id natus sint porro esse non quidem at ipsa, laboriosam corporis iusto consectetur sequi, officiis beatae mollitia sapiente! Aliquam delectus dignissimos, qui reiciendis, voluptatem recusandae.</p>
+
+    <p>Quibusdam qui explicabo harum labore at asperiores eius deserunt. Reiciendis culpa voluptas aut tempora rem iure, illo, quod earum? Magnam iure, voluptatem iusto repudiandae! Veritatis eum, ab voluptatibus vitae explicabo?</p>
+
+  </body>
+</html>

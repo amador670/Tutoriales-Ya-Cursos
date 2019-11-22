@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <script type="text/javascript">
+
+   function abrirVentana() {
+    //La propiedad open() nos permite abrir una nueva pestaña en el navegador
+    var ventana=open();
+    ventana.document.write("Estoy escribiendo en una nueva ventana. Esta es la ventana abrir <br>");
+    ventana.document.write("Segunda linea de texto");
+   }
+
+   function abrirParametros() {
+    //En esta ocacion abrimos una ventana con la propiedad open() y le añadimos algunos parametros
+    var ventana=open("", "", "status=yes, width=400, height=250, menubar=yes");
+    ventana.document.write ("Esto es lo primero que aparece, esta es una ventana con un ancho y alto diferente.");
+   }
+
+   function mostrarAlerta() {
+    //Esta propiedad nos permite abrir un mensaje de alerta
+    alert("Esta es una ventana de alerta, ya ha sido usada anteriormente.");
+   }
+
+   function confirmar() {
+    //La propiedad confirm nos permite añadir un boton de confirmar
+    var respuesta=confirm("Presione un boton para continuar");
+
+    if (respuesta==true)
+     alert("Usted presionó el boton confirmar");
+    else 
+     alert("Usted presionó el boton cancelar");
+   } 
+
+   function cargarCadena() {
+    var cadenaString=prompt("Ingrese una cadena de texto:");
+    if(cadenaString == null || cadenaString == ""){
+     alert("Ingrese un String para continuar");
+    } 
+    else if(cadenaString != ""){
+     alert("Usted ingreso: " + cadenaString);
+    }
+   }
+  </script>
+
+  <h1 style="color:orange;">Eventos Windows</h1>
+
+  <p>Estas propiedades (eventos window) nos permite abrir una ventana con otra informacion o una ventana tipo alerta, confirmar o prompt.</p>
+
+  <form style="text-align:center;">
+   <input type="button" value="Abrir ventana (open)" onclick="abrirVentana()">
+   <input type="button" value="Abrir (open) con parametros" onclick="abrirParametros()">
+   <input type="button" value="¡Alerta!" onclick="mostrarAlerta()">
+   <input type="button" value="Confirmar" onclick="confirmar()">
+   <input type="button" value="prompt" onclick="cargarCadena()">
+  </form>
+
+ </body>
+</html>

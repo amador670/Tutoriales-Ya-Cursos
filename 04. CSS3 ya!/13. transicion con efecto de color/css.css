@@ -1,0 +1,26 @@
+#contenedor{
+width: 450px;
+background-color: purple;
+color: white;
+border-width:2px;
+border-color: red;
+border-style: double;
+text-align:justify;
+padding:10px;
+
+transition:width 1s,
+           background-color 3s;
+-moz-transition:width 1s,
+           background-color 3s;
+-ms-transition:width 1s,
+           background-color 3s;
+-webkit-transition:width 1s,
+           background-color 3s;
+-o-transition:width 1s,
+           background-color 3s;
+}
+
+#contenedor:hover{
+  width:550px;
+  background-color: blue;
+}

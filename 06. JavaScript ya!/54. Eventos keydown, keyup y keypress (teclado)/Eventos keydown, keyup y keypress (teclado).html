@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+  <script type="text/javascript">
+   window.addEventListener("load", inicio, false);
+
+   function inicio () {    
+    document.getElementById("texto").addEventListener("keydown", keydownTeclado, false);
+    document.getElementById("texto").addEventListener("keyup", keyupTeclado, false);
+    //Borrar datos:
+    document.getElementById("borrarDatos").addEventListener("click", borrar, false);
+   }
+
+   function keydownTeclado() {
+    var cantidad = document.getElementById("texto").value.length;
+    var disponibles = 140-parseInt(cantidad);
+    document.getElementById("cantidad").innerHTML = disponibles;
+    document.getElementById("texto").style.backgroundColor="#b4f9ff";
+   }
+
+   function keyupTeclado(){
+    document.getElementById("texto").style.backgroundColor = "white";
+   }
+
+   //Con esta funcion podemos hacer que al dar click al boton "borrar datos" se eliminen los caracteres ingresados.
+   function borrar() {
+    var disponibles = 140;
+    document.getElementById("cantidad").innerHTML = disponibles;
+   }
+
+   //La segunda forma de limpiar los datos es la siguiente:
+   //1.- Se añade un onclick="" en el boton borrar
+   /* function borrar() {
+    var numeroInicial = 140;
+    document.getElementById("cantidad").innerHTML = numeroInicial;
+   }*/
+
+   //La tercera forma de limpiar los datos es la siguiente: 
+   //Se recuerda que asi existen muchos otros metodos para borrar datos.
+   //1.- Se añade un onclick="" en el boton borrar
+   /*function borrar(){
+      var limpiarDatos = document.getElementById("cantidad").value = 140;
+      document.getElementById("cantidad").innerHTML = limpiarDatos;
+      }
+   */
+  </script>
+
+ </head>
+ <body>
+
+  <h1 style="color:blue;">Eventos keydown, keyup y keypress (teclado)</h1>
+  <p>
+   Evento <b>Keydown</b>, este evento se ejecuta al presionar una tecla en el teclado.
+   <br><br>
+   Evento <b>keyup</b>, este evento se ejecuta al levantar (al dejar de pulsar una tecla) una tecla en el teclado.
+   <br><br>
+   Evento <b>keypress</b>, este evento se ejecuta al presionar una tecla y se queda activado por defecto.
+  </p>
+
+  <hr>
+  <p>Escriba un comentario de maximo 140 caracteres. Disponibles <span id="cantidad">140</span></p>
+
+  <form action="#">
+   <textarea id="texto" maxlength="140" cols="50" rows="5"></textarea>
+   <br>
+   <input type="reset" id="borrarDatos" value="Borrar Datos">
+   <input type="submit" id="enviar" value="Enviar Datos">
+  </form>
+
+ </body>
+</html>

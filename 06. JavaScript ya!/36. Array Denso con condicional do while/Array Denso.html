@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:#0089ff">Array's denso.</h1>
+  <h2 style="color:#0089ff">Suma de array (vectores) mediante ciclos y parametros.</h2>
+
+  <script type="text/javascript">
+   var vector = [] //Definimos un Array mediante una variable 
+   var valor, 
+       indice=0; //el indice almacenara los numeros ingresados 
+
+   //El condicional (do while) se ejecutara al menos una vez.
+   do { 
+    //Los datos de la variable "valor", seran ingresados mediante un prompt
+    valor=parseInt(prompt("Ingrese un valor entero (0 para finalizar)", ""));
+    //Mientras la variable valor sea diferente a 0 seguira ejecutandose el condicional
+    if (valor!=0) {
+     vector[indice]=valor; //vector tendra de parametro el indice[0] y sera igual al valor
+     indice++; // Mientras el numero no sea 0, indice se ira sumando, es decir el numero ingresado anteriormente en el prompt se sumara con los siguientes y asi sucesivamente se ira acumulando y sumando
+    }
+   } while (valor!=0); //Cuando sea 0 se detiene automaticamente el condicional
+
+   //Segundo paso, sumar y mostrar resultados:
+   var suma=0; 
+   for (var ciclo=0; ciclo<vector.length; ciclo++){
+    suma=suma+vector[ciclo];
+   }
+
+   //Tercer paso, creamos un ciclo para mostrar los datos de la variable "valor" (ingresados mediante prompt), como estos son almacenados como Array's le damos las propiedades al ciclo para que muestro los array ingresados 
+   var mostrarVectores = vector; //Creamos una variable y esta sera igual a la variable "vector" 
+   for (i=0; i<vector; i++){
+    mostrarVectores=vector;        
+   }
+   document.write("Se ingresaron " + vector.length + " valores." + "<br>");  //Aqui mostramos cuantos array hemos creado
+   document.write("Los numeros ingresados fueron:" + "<br>" + mostrarVectores.join("<br>") + "<br>") //Aqui mostramos los array ingresados y con .join() los separamos 
+   document.write("La suma de los valores ingresados es: " + suma); //Aqui mostramos la suma de los array ingresados  
+
+  </script>
+
+ </body>
+</html>

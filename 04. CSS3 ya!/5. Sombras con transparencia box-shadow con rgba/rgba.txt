@@ -1,0 +1,1 @@
+Se añade una sombra usando los mismos pasos de siempre pero se le añade rgba y una transparencia para causar este efecto.

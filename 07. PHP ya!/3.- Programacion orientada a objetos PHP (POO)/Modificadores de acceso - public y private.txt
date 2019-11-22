@@ -1,0 +1,5 @@
+Modificadores de acceso public y private para atributos y metodos (variables y funciones).
+
+Un método privado (private) solo puede ser llamado desde otro método de la clase. No podemos llamar a un método privados desde donde definimos un objeto, es decir que los metodos privados no pueden usarse despues de haber definido una clase, solo permiten ser usados dentro de la misma clase, de igual forma los atributos, si estos son usados fuera de dicha clase aparece un error sintáctico.
+
+Usar un metodo privado es para elimina la posibilidad de llamar a métodos por error. El modificador private nos permite ocultar en la clase, atributos y métodos que no queremos que los accedan directamente quien define objetos de dicha clase. 

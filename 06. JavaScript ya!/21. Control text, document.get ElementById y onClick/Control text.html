@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prueba de JavaScript curso gratis</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+        body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function mostrarMensaje(e) {
+            var nombre = document.getElementById("nombre").value,
+                edad = document.getElementById("edad").value;
+
+            /*El condicional se puede añadir si es != a "" o si es >= 1 */
+            if (nombre.length != "" && edad.length != "") {
+                alert("Ha ingresado el nombre " + nombre);
+                alert("Usted tiene " + edad + " años");
+            } else {
+                alert("Ingrese su nombre y/o su edad");
+            }
+        }
+
+        function borrarMensaje() {
+            var nombre = "",
+                edad = "";
+            alert("Los datos fueron borrados exitosamente");
+        }
+    </script>
+
+    <form>
+        Ingrese un nombre de usuario:<br>
+        <input type="text" id="nombre"><br>
+        Ingrese sú edad:<br>
+        <input type="text" id="edad"><br><br>
+
+        <input type="submit" value="Enviar datos" onclick="mostrarMensaje()">
+        <input type="reset" value="Borrar datos" onclick="borrarMensaje()">
+    </form>
+
+    <h1 style="color:#c90000">Document.getElementById() y onClick</h1>
+
+    <p>Mediante la propiedad document.getElementById() podemos acceder a un "id", en este caso accedemos a ellos
+        mediante el "id" a input type y mediante un onClick a un boton mostramos la funcion</p>
+
+</body>
+
+</html>

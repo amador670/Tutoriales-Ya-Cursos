@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }
+  </style>
+
+ </head>    
+ <body>
+
+  <h1 style="color:#ff9d00">Expresiones regulares /condición/</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dicta labore molestiae doloribus temporibus, obcaecati mollitia libero rerum, perferendis quos quam sapiente vitae. Omnis vero accusantium explicabo corporis nobis, in.</p>
+
+  <p>Repudiandae, aspernatur, in. Error asperiores perspiciatis earum facilis, id quae expedita quod optio beatae, necessitatibus temporibus porro adipisci obcaecati odio est. Explicabo fugit iure inventore aliquid excepturi, ipsam quam laudantium.</p>
+
+  <p>Atque doloremque molestiae, inventore eos illo ducimus ex distinctio quod sunt nam ipsum, voluptas fuga! Nostrum, quis earum at optio temporibus id eaque quia in sint ducimus iusto ullam architecto.</p>
+
+  <hr><br>
+
+  <form action="#"> 
+   <input type="text" placeholder="Nombre" id="nombre">
+   <input type="submit" id="enviar" value="Enviar Consulta">
+  </form>
+
+  <br><br><hr><br>
+
+  <span id="remplazarCorreo"></span>
+  <button onclick="verificarCorreo()">Click para ingresar un nuevo correo</button>
+
+  <script type="text/javascript">
+
+   //Creamos dos variables, una que solicita un determinado dato al usuario y la otra con una expresion regular /condiciónal o propiedad/ 
+   function verificarCorreo(){
+    var correo=prompt("Ingresar un correo electronico", ""),
+        verificacion=/@/; //Expresion regular:
+
+    //Creamos un condicional. Si "verificacion.test" que es la expresion regular, esta contenida dentro la primera variable "correo" se ejecuta una condición.
+    if (verificacion.test(correo)){
+     alert("El correo ingresado es valido, gracias por suscribirse");          
+    } 
+    else {
+     alert("No ingreso un correo valido, por favor verificar");
+     return verificarCorreo();
+    }
+    document.getElementById("remplazarCorreo").innerHTML = "El correo de usuario ingresado fue: " + correo + "<br>";
+   }
+   verificarCorreo();
+
+   window.addEventListener("load", function inicio(){
+    document.getElementById("enviar").addEventListener("click", function enviarConsulta(event){
+
+     var verificacionNombre = /[a-zA-Z]/,
+         nombre = document.getElementById("nombre").value;
+
+     if(verificacionNombre.test(nombre)){
+      alert("Gracias por enviarnos sus datos. Bienvenido " + nombre);
+     } else {
+      alert("Ingrese sus datos correctamente");
+      event.preventDefault();
+     }
+
+    }, false);
+   }, false);
+
+
+  </script>
+
+
+ </body>
+</html>

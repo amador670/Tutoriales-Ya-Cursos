@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      body {
+        font-family: Comic sans ms; 
+        font-size: 20px;
+        text-align: justify;
+        margin: 50px;
+      }     
+    </style>
+  </head>
+  <body>
+
+      <script type="text/javascript">
+        
+      var numero=prompt("Ingrese un numero para determinar la raíz cuadrada", "");
+          //Esta propiedad es para sacar la raíz cuadrada de un numero (.sqrt) y parseFloat es para que nos de el resultado de forma numérica con decimales
+          numero=parseFloat(Math.sqrt(numero));
+
+      document.write("La raiz cuadrada del numero ingresado es:  " + numero.toFixed(2));
+      </script>
+      
+    <h1 style="color:#0093ff">Propiedad math.sqrt()</h1>
+    <p>Con esta propiedad podemos sacar la raíz de un determinado numero mediante JavaScript</p>
+    
+    <p>La propiedad <b>.toFixed()</b> es para los valores numéricos, esta propiedad se encarga de los decimales, el numero que le otorguemos como parámetro .toFixed(2) sera los decimales que mostrara, en este ejemplo dos.</p>
+    
+    <p><b>Aproximación</b>, la propiedad .toFixed() aproxima los decimales, ejemplo el valor numérico "5.56789" sera aproximado a "6".</p>
+    
+    <p><b>Añade mas decimales</b>, si a un valor numérico se le añade la propiedad .toFixed() con un parámetro mayor a la cifra resultante añade ceros al final, ejemplo 123.10.toFixed(10) añade 10 decimales, este empieza 123.10<b>00000000</b></p>
+   
+  </body>
+</html>

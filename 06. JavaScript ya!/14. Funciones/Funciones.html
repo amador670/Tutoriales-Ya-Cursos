@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        //De esta forma añadimos un función (function). 
+        function repetirMensaje() {
+            document.write("Este mensaje se repetirá tres veces <br>");
+            document.write("El mensaje se ha repetido con éxito. Felicidades <br>");
+        }
+        //Después de añadir los datos que va a contener nuestra función la llamamos en pantalla, para esto no es necesario añadir el "document.write", lo podemos hacer llamándola y añadiendo los paréntesis.  
+        repetirMensaje();
+        repetirMensaje();
+        repetirMensaje();
+
+        document.write("<br><hr><br>");
+
+        //De esta forma añadimos una función y adentro contiene un ciclo for
+        function repetirX2() {
+            //el "i" es el caracter universal que se suele usar para un ciclo.  
+            for (i = 1; i <= 5; i++) {
+                document.write(
+                    "Estoy probando otra función pero esta vez contiene un ciclo for, Este aviso se repetirá cinco veces. <br>"
+                );
+            }
+        }
+        //Y luego llamamos a la función. De esta forma no hay que repetir la función constantemente
+
+        function probando() {
+            for (var i = 1; i <= 3; i++) {
+                document.write(i + "<br>");
+            }
+        }
+    </script>
+
+    <span style="color:orange">
+        <script>
+            repetirX2();
+        </script>
+    </span>
+
+    <hr>
+    <span style="color: tomato">
+        <script>
+            probando();
+        </script>
+    </span>
+
+</body>
+
+</html>

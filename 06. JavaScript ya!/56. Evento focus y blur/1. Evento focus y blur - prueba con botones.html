@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }
+   #borrar, #enviar, #probar{
+    color:#575700;
+    border-style: double;
+    border-color: #ffc400;
+    background-color: #dddddd;        
+   }
+  </style>
+
+  <script type="text/javascript">
+   window.addEventListener("load", inicio, false);
+
+   function inicio() {
+    var inputText = document.getElementsByClassName("inputText");
+    for(var i=0; i<inputText.length; i++){
+     document.getElementsByClassName("inputText")[i].addEventListener("focus", textFocus, false);
+     document.getElementsByClassName("inputText")[i].addEventListener("blur", textBlur, false);
+    }
+    
+    var botonFormulario = document.getElementsByClassName("botonFormulario");
+    for(var i=0; i<botonFormulario.length; i++){
+     document.getElementsByClassName("botonFormulario")[i].addEventListener("focus", botonFocus, false);
+     document.getElementsByClassName("botonFormulario")[i].addEventListener("blur", botonBlur, false);
+    }
+   }
+
+   function textFocus() {
+    this.style.color="#00a7ff";
+   }
+   function textBlur() {
+    this.style.color="#29d800";
+   }
+   function botonFocus() {
+    this.style.color="#ff0000";
+    this.style.borderStyle="double";
+    this.style.borderColor="#00a7ff";
+   }
+   function botonBlur() {
+    this.style.color="#9e03ff";
+    this.style.borderColor="#29d800";
+   }
+  </script>
+ </head>    
+ <body>
+
+  <h1 style="color:orange;">Evento focus y blur en JavaScript</h1>
+  <hr>
+  <p>
+   <b style="color:orange;"><i>Evento focus</i></b>
+   <br>
+   El evento de <b>focus</b> ocurre cuando un elemento obtiene el foco.
+   <br><br>
+   El evento de <b>focus</b> se suele utilizar con &lt;input&gt;, &lt;select&gt; y &lt;a&gt;.
+   <br><br>
+   Sugerencia: El evento <b>focus</b> es el opuesto al evento blur.
+   <br><br>
+   Nota extra: El evento de focus es similar al evento focusin. La principal diferencia es que el evento focus no burbujea. Por lo tanto, si desea averiguar si un elemento o su hijo obtiene el foco, puede utilizar el evento focusin. Sin embargo, puede lograr esto utilizando el parámetro opcional useCapture del método addEventListener() para el evento focus.
+  </p>
+  <hr>
+  <p>
+   <b style="color:orange;"><i>Evento blur</i></b>
+   <br>
+   El evento <b>blur</b> se produce cuando un objeto pierde foco.
+   <br><br>
+   El evento <b>blur</b> se usa con más frecuencia con código de validación de formulario (por ejemplo, cuando el usuario deja un campo de formulario).
+   <br><br>
+   Consejo: El evento <b>blur</b> es el opuesto al evento focus.
+   <br><br>
+   Sugerencia: El evento onblur es similar al evento focusout. La principal diferencia es que el evento onblur no burbujea. Por lo tanto, si desea averiguar si un elemento o su hijo pierde foco, podría utilizar el evento onfocusout. Sin embargo, puede lograr esto utilizando el parámetro opcional useCapture del método addEventListener () para el evento onblur.
+  </p>
+  <hr>
+  <h1 style="color:orange;">Ejemplo del evento en JS</h1>
+  <form>
+   <div id="inputText">
+    Ingrese su nombre de usuario: <br>
+    <input type="text" id="text1" class="inputText" size="30">
+    <br>
+    Ingrese su clave de usuario: <br>
+    <input type="text" id="text2" class="inputText" size="30">
+    <br>
+   </div>
+   <input type="reset" value="Borrar Datos" id="borrar" class="botonFormulario">
+   <input type="submit" value="Enviar Datos" id="enviar" class="botonFormulario">
+   <input type="button" value="Boton probar" id="probar" class="botonFormulario">
+  </form>
+
+ </body>
+</html>

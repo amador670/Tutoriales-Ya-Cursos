@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+ </head>
+ <body>
+  <h1 style="color:red">Metodo .unshift()</h1>
+  <p>Este metodo añade nuevos elementos al principio de un Array</p>
+
+  <pre>Ejemplo de este metodo:
+    var vector = [1, 2];
+
+    vector.unshift(0); // El resultado seria 3 array, el 0 se añade al principio:
+    // vector is [0, 1, 2]
+
+    vector.unshift(-2, -1); // El resultado seria 5 array, el -2, -1 se añade al principio:
+    // vector is [-2, -1, 0, 1, 2]
+
+    vector.unshift([-3]); // El resultado seria 6 array:
+    // vector is [[-3], -2, -1, 0, 1, 2]
+    </pre>
+
+  <h1 style="color: red">Metodo .shift()</h1> <!--El metodo .pop() es el que elimina los ultimos array-->
+  <p>Este elemento remueve el primer elemento de un array</p>
+
+  <script type="text/javascript">
+
+   //Creamos una variable vector con un array y dos variables vacias
+   var vector=[];
+   var valor;
+   //Creamos una estructura do while para que se ejecute al menos una vez....
+   do {
+    valor=parseInt(prompt("Ingrese un valor de tipo numerico. (0 para finalizar):", ""));
+    //Si el valor es menor a 50 se añaden los elementos al principio del array. 
+    if (valor<50) {
+     vector.unshift(valor);
+    } 
+
+    //Si el valor es mayor a 50 se añaden los elementos al final del array. 
+    else {
+     vector.push(valor);
+    }
+   } while (valor!=0); //Al ingresar 0 se finaliza el condicional (estructura do while)
+
+   //El metodo .shift removera el primer elemento del array, este sera el 0 ya que es el ultimo numero introduccido al finalizar el ciclo. 
+   vector.shift();
+   for (var ciclo=0; ciclo<vector.length; ciclo++) 
+   {
+    //Estos se organizaran mediante el ciclo for
+    document.write("Los vectores introduccidos son. " + vector[ciclo] + "<br>");
+   }
+
+   document.write("<br><br><hr>");
+
+   /*Ejemplo de Array numerales*/
+   var numerosPares = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+
+   document.write(numerosPares.join(", ") + "<br><br>");
+
+   /*shift - Quita el primer elemento del Array*/
+   numerosPares.shift();
+   document.write(numerosPares.join(", ") + "<br><br>");
+
+   /*unshift - Añade un elemento de primero en un Array */
+   numerosPares.unshift(0);
+   document.write(numerosPares.join(", ") + "<br><br>");
+  </script>
+
+ </body>
+</html>

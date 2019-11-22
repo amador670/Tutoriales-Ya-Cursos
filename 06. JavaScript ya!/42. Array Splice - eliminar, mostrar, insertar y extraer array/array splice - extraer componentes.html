@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:orange;font-family:comic sans ms;">Metodo array.splice</h1>
+  <p>Extraer array's usando el metodo splice()</p>
+
+  <hr>
+  <script type="text/javascript">
+   //Creamos un array de forma sencilla
+   var vector=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+   var ciclo;
+
+   document.write("Vector inicial<br>");
+
+   for(ciclo=0; ciclo<vector.length; ciclo++)
+   {
+    document.write(vector[ciclo]+"<br>");
+   }
+
+   var vector2=vector.splice(1, 3); //Para extraer una variable con el metodo splice() simplemente creamos una variable y le añadimos los array, y como parametro le asignamos los array que deseamos mostrar 
+
+   document.write("<hr> El metodo .splice() tambien permite extraer vectores. En este ejemplo los elementos extraidos son: <br>");
+
+   for (ciclo=0; ciclo<vector2.length; ciclo++)
+   {
+    document.write(vector2[ciclo]+"<br>");
+   }
+
+   document.write("<hr>");
+
+   var amigos = [
+    "Sarah",
+    "Maximo",
+    "Karen",
+    "Magdalena",
+    "Vecinos",
+    "Karla",
+    "Anibal",
+    "Carlos",
+    "Jimena",
+    "Antonieta",
+    "Carlos Vives"
+   ];
+
+   document.write(amigos.join("<br>"));
+   document.write("<hr>");
+
+   var familia = amigos.splice(0, 4);
+
+   document.write("Mi familia es:" + "<br>");
+   document.write(familia.join("<br>"));
+
+  </script>
+
+
+ </body>
+</html>

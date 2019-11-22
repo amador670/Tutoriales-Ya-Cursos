@@ -1,0 +1,10 @@
+p {
+  color: white;
+  background-color:blue;
+  border-width:3px;
+  border-style:double;
+  border-color:white;
+ 
+  padding: 15px;
+  margin:0px 15px;
+}

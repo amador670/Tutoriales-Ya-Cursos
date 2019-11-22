@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }
+  </style>
+
+ </head>
+ <body>
+
+  <script type="text/javascript">
+   //Se crean dos variables numericas que se añaden mediante una propiedad prompt
+   var valor1=parseInt(prompt("Ingrese un numero:", "")),
+       valor2=parseInt(prompt("Ingrese un numero que sea mayor al anterior:", ""));
+
+   //Se crea nuestra funcion
+   if (valor1<valor2){
+    function mostrarDatos() {
+     var inicio; //Se añade una variable
+     for(inicio=valor1;inicio<=valor2;inicio++) //La variable "inicio" es igual al valor ingresado en el primer prompt(valor1). La variable inicio sera menor al numero de la variable "valor2" y luego se sumara 1 a la variable "inicio" hasta llegar a el numero de la variable "valor2"
+     {
+      document.write(inicio + " ");//Finalmente se muestra la variable inicio mas un espacio en blanco
+     } 
+    }
+    mostrarDatos();
+   } 
+   else {
+    document.write("Usted no ingreso los datos correctamente. Reinicie el navegador y vuelva a intentarlo.")
+   } 
+
+  </script>
+
+  <hr><h1 style="color:#0089ff">Funcion con parametros y ciclo for (prompt + for)</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempore laborum hic suscipit excepturi recusandae adipisci beatae, inventore veritatis. Vero placeat dolores voluptas tempore, aliquam adipisci est error nam. Soluta.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, sequi perferendis nobis est, culpa modi atque non. Ratione, doloremque, nisi. Recusandae illo odio sunt similique, eos, modi quae reiciendis aliquid!</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eum iste incidunt, minus nostrum cupiditate quaerat nihil dolore in ad possimus accusamus a aut ducimus sed maxime temporibus dicta! Optio!</p>
+ </body>
+</html>

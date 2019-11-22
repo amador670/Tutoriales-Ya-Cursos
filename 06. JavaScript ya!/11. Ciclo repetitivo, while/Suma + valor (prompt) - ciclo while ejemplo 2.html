@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de JavaScript curso gratis</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style>
+body {
+    font-size:20px; 
+    text-align: center;
+    margin-top: 50px;
+}  
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+//Se crean tres variables
+var x=1; //x vale 1 y el ciclo while sera menor a 3.
+var suma=0;//La variable suma sera igual a 0.
+var valor;//La variable valor sera igual al numero ingresado en la funcion prompt
+        
+while (x<=3){//El ciclo sera menor que 3 (se repetira tres veces). 
+    valor=parseInt(prompt("Ingrese un numero para la suma:", "Numeros"));//Valor sera igual al prompt, y sera un valor numerico (parseInt)
+    suma=suma+valor;//La suma sera igual a la suma(inicialmente 0) + el valor. Es decir el valor suma+1, suma+2, suma+3, (se va acumulando) y se van sumando los valores 3 veces (los que son introducidos en el prompt)
+    x=x+1; //El valor de x (que es el ciclo) ira incrementando en 1, hasta llegar a 3 y finalizar cuando "x" sea igual a 3, si no se añade se crea un ciclo infinito
+}
+//Se imprime en pantalla el resultado:
+    document.write("La suma de los valores es " + suma + "<br>");
+</script>
+
+</body>
+</html>

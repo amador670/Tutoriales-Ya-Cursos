@@ -1,0 +1,22 @@
+Colores para botones completamente
+btn 
+btn-primary
+btn-secondary
+btn-success
+btn-info
+btn-warning
+btn-danger
+btn-dark
+btn-light
+btn-link
+_________________________________
+Colores solo para el borde de los botones
+btn 
+btn-outline-primary
+btn-outline-secondary
+btn-outline-success
+btn-outline-info
+btn-outline-warning
+btn-outline-danger
+btn-outline-dark
+btn-outline-light

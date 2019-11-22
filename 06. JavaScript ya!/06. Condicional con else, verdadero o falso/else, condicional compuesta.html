@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <style>
+      body { 
+        font-size: 20px;
+        text-align: justify;
+        margin: 50px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      var numero1=parseInt(prompt("Ingrese el primer numero alazar", "")),
+          numero2=parseInt(prompt("Ingrese el segundo numero alazar", "")),
+          suma = numero1 + numero2;
+
+      if (numero1>numero2)
+      {
+        document.write ("El numero mayor es " + numero1);
+        document.write(" y la suma de ambos es: " + suma);
+      }
+      else
+      {
+        document.write ("El numero mayor es " + numero2);
+        document.write(" y la suma de ambos es: " + suma);
+      }
+    </script>
+    <br>
+    <br>
+
+    La función prompt retorna un string por lo que debemos convertirlo a entero cuando queremos saber cual de los dos valores es mayor numéricamente. En el lenguaje JavaScript una variable puede ir cambiando el tipo de dato que almacena a lo largo de la ejecución del programa.
+    <br>
+    <br>
+    Estamos en presencia de una ESTRUCTURA CONDICIONAL COMPUESTA ya que tenemos actividades por la rama del verdadero y del falso.
+    <br>
+    <br>
+    Con la propiedad else hacemos que muestra una opcion distinta. Si no es una opcion sera la otra
+  </body>
+</html>

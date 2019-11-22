@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: left;
+    margin: 50px;
+    font-family: comic sans ms;
+   }
+  </style>
+
+ </head>    
+ <body>
+
+  <h1 style="color:orange">Añadir varias expresiones regulares</h1>    
+  <p style="margin-bottom: 27px; color: blue;" id="mensajeEscrito"></p>
+
+  <hr style="color:#ff0000">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat accusantium incidunt magnam, quod id, omnis ipsum adipisci ipsam, optio voluptatibus suscipit cumque voluptas nihil nam error repudiandae, rerum totam quas!</p>
+
+  <p>Quae non quod provident, saepe voluptate sunt molestias veritatis perferendis incidunt maiores, ipsum ab porro? Nihil voluptate qui sed cum inventore laudantium fuga eum vitae. Assumenda sunt doloribus cum quia!</p>
+
+  <p>Aliquid optio aliquam non doloremque, nobis enim nesciunt accusamus rerum expedita aut ipsum, accusantium! Ipsum quos itaque, in expedita excepturi voluptas voluptatibus esse quasi ducimus, soluta, tempora magnam cum blanditiis.</p>
+
+  <script type="text/javascript">
+   function ingresarNombrePrompt(){
+    ingreseNombre=prompt("Ingrese su Nombre y Apellido", "Ejemp... José Antonio");
+
+    if(ingreseNombre == null){
+     alert("Ingrese su Nombre y Apellido");
+     return ingresarNombrePrompt();
+    }
+   }
+   
+   ingresarNombrePrompt();
+
+   function ingresarCorreo(){
+    var correo=prompt("Ingrese un correo", "Ejemp... josé@gmail.com");
+    var verificacion1=/@/,
+        verificacion2=/[.]/,
+        verificacion3=/com$/;
+
+    //Verificaciob 1 = @
+    if (verificacion1.test(correo)){}
+    else {
+     alert("Correo no valido. Falta el @");
+     return ingresarCorreo();
+    }
+    //Verificacion 2 = .
+    if (verificacion2.test(correo)){}
+    else {
+     alert("Correo no valido. Revisar nuevamente por favor");
+     return ingresarCorreo();
+    }
+
+    //Verificacion 3 = com
+    if(verificacion3.test(correo)){}
+    else {
+     alert('Correo no valido. Falta el "com"');
+     return ingresarCorreo()
+    }
+    document.getElementById("mensajeEscrito").innerHTML = "Bienvenido " + ingreseNombre + " , el correo ingresado fue: " + correo;
+   }
+   ingresarCorreo();
+  </script>
+
+ </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicios de JavaScript</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <style>
+      body { 
+        font-size: 20px;
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }
+
+      h4{    
+        margin: 5px;
+      }
+    </style>
+
+  </head>    
+  <body>
+
+    <h1 style="color: orange">Operadores de igualdad y desigualdad.</h1>
+    <h4>Operador de igualdad <b>==</b> </h4>
+    <h4>Operador de igualdad <b>===</b> </h4>
+    <h4>Operador de desigualdad <b>!=</b> </h4>
+    <h4>Operador de desigualdad <b>!==</b> </h4>
+
+    <script type="text/javascript">
+      var uno = "1";
+
+      if (uno == 1) {
+        document.write('<hr>Hola, como estamos usando el operador == , este hace una conversion donde ambos operadores (variables) las convierte y resultan iguales, por lo tanto se muestra este aviso<br><br>');
+      }
+
+      document.write("<hr> Como estamos usando el operador ===, no se muestra el mensaje oculto, las variables no son iguales y evita que se muestre el mensaje. Revisar el codigo de sintaxis para ver el mensaje oculto <br><br>");
+      if (uno === 1) { 
+        document.write("<hr><br> Este es el mensaje oculto");
+      }
+
+      if (uno != 0) {
+        document.write('<hr> En este caso usamos el operador != de diferencia, como el condicional "uno != 0" es diferente a 1 este mensaje se muestra.<br><br>');
+      }
+
+      document.write('<hr> Para mas informacion respecto a los diferentes operadores consultar la siguiente pagina: <br><br> http://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=70&cod=73' + "<hr>");
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+        body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+    <script type="text/javascript">
+        window.addEventListener("load", function cargaCheckbox() {
+
+            var enviar = document.getElementById("enviar");
+
+            enviar.addEventListener("click", function () {
+                var checkbox1 = document.getElementById("number1"),
+                    checkbox2 = document.getElementById("number2"),
+                    checkbox3 = document.getElementById("number3"),
+                    checkbox4 = document.getElementById("number4");
+
+                if (checkbox1.checked) {
+                    alert("Usted es cocinero en un restaurante");
+                }
+                if (checkbox2.checked) {
+                    alert("Usted trabaja de panadero");
+                }
+                if (checkbox3.checked) {
+                    alert("Usted es un programador y desarrollador")
+                }
+                if (checkbox4.checked) {
+                    alert("Usted actualmente no tiene ningun empleo")
+                }
+            });
+
+        }, false)
+    </script>
+
+</head>
+
+<body>
+
+    <p>Usted esta trabajando actualmente de:</p>
+
+    <form>
+        <input type="radio" id="number1" name="estan-relacionados-entre-si">Cocinero
+        <br>
+        <input type="radio" id="number2" name="estan-relacionados-entre-si">Panadero
+        <br>
+        <input type="radio" id="number3" name="estan-relacionados-entre-si">Programador
+        <br>
+        <input type="radio" id="number4" name="estan-relacionados-entre-si">No trabajo
+        <br> <br>
+        <input type="button" value="Enviar" id="enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+    <hr>
+    <h1 style="color:#009dff">Control radio checked - onClick y document.getElementById()</h1>
+    <p>Con la propiedad .checked en JavaScript podemos configurar que sucedera al selecionar algun checkbox de caracter
+        "radio checked" o "checkbox".</p>
+
+    <p><b>Nota.</b> Se añade ==true para indicar que la propiedad estara activa, o que contara como un checkbox, en
+        dado caso que sea ==false, no se contara al enviar los datos.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:blue;font-family:comic sans ms;">Array .sort()</h1>
+  <p>El método sort () ordena los elementos de una matriz.</p>
+
+  <p>El orden puede ser tanto alfabético o numérico, ya sea ascendente (arriba) o descendente (abajo).</p>
+
+  <p>De forma predeterminada, el método sort () clasifica los valores como cadenas en orden alfabético y ascendente.</p>
+
+  <p>Esto funciona bien para cadenas. Sin embargo, si los números se ordenan como cadenas numericas, "25" es mayor que "100", porque "2" es más grande que "1". Debido a esto, el método sort() producirá un resultado incorrecto al ordenar números.</p>
+
+  <h1 style="color:red;font-family:comic sans ms;">Array .reverse()</h1>
+  <p>El método reverse() coloca al revés (inversamente) una matriz. El primer elemento pasa a ser el último y el último pasa a ser el primero.</p>
+
+  <hr>
+  <script type="text/javascript">
+
+   var nombres=["Amador", "Karen", "Sarah", "Magdalena", "Maximo", "Worr", "Topo", "Mancha", "Tribilin", "Cleo"];
+   var orden;
+
+   //Mostramos los array de forma sencilla mediante un ciclo.
+   document.write("<i>Vector antes de ordenarlos:</i> <br>");
+   for (orden=0; orden<nombres.length; orden++)
+   {
+    document.write(nombres[orden] + "<br>");
+   }
+
+   //La propiedad .sort() se encarga de acomodar los array de forma alfabetica.
+   nombres.sort();
+   document.write("<hr><i>Vector ordenados alfabeticamente:</i><br>");
+   for (orden=0; orden<nombres.length; orden++)
+   {
+    document.write(nombres[orden] + "<br>");
+   }
+
+   //La propiedad .reverse() se encarga de acomodar los array de forma alfabetica pero en reversa, empezando desde el final hasta el principio.
+   nombres.reverse();
+   document.write("<hr><i>Vector ordenados alfabeticamente en reversa:</i><br>");
+   for (orden=0; orden<nombres.length; orden++)
+   {
+    document.write(nombres[orden] + "<br>");
+   }
+
+   document.write("<hr> <h2>Ejemplo extra</h2>");
+   var amigosImaginarios = [
+    "Amador",
+    "Zaack",
+    "Horacio",
+    "Carlos",
+    "Xion",
+    "Babilon",
+    "Nazer", 
+    "Maximo"
+   ];
+
+   document.write("<h2> Amigos Alfabeticos </h2>");
+
+   amigosImaginarios.sort();
+   for(var ordenAlfabetico=0; ordenAlfabetico < amigosImaginarios.length; ordenAlfabetico++){
+    document.write(ordenAlfabetico+1 + ".- ");
+    document.write(amigosImaginarios[ordenAlfabetico] + "<br>");
+   }
+
+   document.write("<br><hr>");   
+   document.write("<h2> Amigos Descendentes </h2>");
+
+   amigosImaginarios.reverse();
+   for(var ordenDescendente=0; ordenDescendente < amigosImaginarios.length; ordenDescendente++){
+    document.write(ordenDescendente+1 + ".- ");
+    document.write(amigosImaginarios[ordenDescendente] + "<br>");
+   }
+  </script>
+
+ </body>
+</html>

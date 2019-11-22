@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:orange; font-family:comic sans ms;">Array .splice()</h1>
+  <p>El metodo splice() cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.</p>
+  <hr>
+  <script type="text/javascript">
+   //Creamos un array de forma sencilla
+   var vector=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+   document.write("Vector inicial<br>");
+
+   for(var ciclo=0; ciclo<vector.length; ciclo++)
+   {
+    document.write(vector[ciclo]+"<br>");
+   }
+
+   vector.splice(6, 5); //Metodo .splice, el primer numero es desde donde se empezara a eliminar, y el ultimo numero es cuantos va a eliminar. En este caso desde el primer array (6) eliminara cinco vectores. 
+
+   document.write("<hr> Vectores aplicando metodo Array Splice<br>");
+
+   for(ciclo=0; ciclo<vector.length; ciclo++)
+   {
+    document.write(vector[ciclo]+"<br>");
+   }
+
+   document.write("<hr>");
+
+   var familia=[
+    "Mama",
+    "Papa", 
+    "Karen",
+    "Sarah",
+    "Amador"
+   ];
+
+   document.write(familia.join("<br>"));
+   document.write("<hr>");
+
+   familia.splice(4, 1);
+   document.write(familia.join("<br>"));
+
+  </script>
+
+
+ </body>
+</html>

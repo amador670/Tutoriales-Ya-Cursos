@@ -1,0 +1,44 @@
+<!----><!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicios de JavaScript</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <style>
+      body { 
+        font-size: 20px;
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }
+    </style>
+
+  </head>    
+  <body>
+
+    <h1 style="color:#00e2ff">Propiedad isNaN (valor numerico)</h1>
+    <p>Esta propiedad se emplea cuando asignamos o queremos que un valor ingresado sea de tipo numérico. Si el usuario ingresa un valor de otro tipo, con esta propiedad podemos emplear una alerta o advertencia escrita para avisar al usuario que el valor no es valido.</p>
+    <hr>
+    
+    <script type="text/javascript">
+      var valorUno, valorDos, suma;
+
+      function sumarValores(event){
+        valorUno=parseInt(prompt("Ingrese el primer valor para una suma", "Solo Digito"));
+        valorDos=parseInt(prompt("Ingrese el segundo valor para una suma", "Solo Digito")); 
+
+        if (isNaN(valorUno) || isNaN(valorDos)) { 
+          alert("Uno de los valores ingresados no fue un numero."); 
+          return sumarValores();
+        }
+        else {
+          suma = valorUno + valorDos;
+          document.write("Ambos valores ingresados fueron numeros. La suma de ambos fue: " + suma);
+        }
+      }
+
+      sumarValores();
+    </script>
+
+  </body>
+</html>

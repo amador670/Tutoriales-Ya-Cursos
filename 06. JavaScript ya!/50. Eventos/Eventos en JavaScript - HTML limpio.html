@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        font-size:20px; 
+        text-align: justify;
+        margin: 50px;
+        font-family: comic sans ms;
+      }  
+    </style>
+
+    <h1 style="color:blue">Eventos en JavaScript con HTML limpio</h1>
+    <p>Añadiendo los eventos de JavaScript mediante el metodo .getElemetById() y los "id" de HTML podemos añadir eventos de forma limpia sin que nuestro codigo HTML posea rastros de propiedades JavaScript.</p>
+    <hr>
+    
+    <script type="text/javascript">
+      window.onload=inicio;
+
+      function inicio() {
+        document.getElementById("formulario").onsubmit=validar;
+      }
+
+      function validar() {
+        var usuario=document.getElementById("user").value;
+        var clave=document.getElementById("clave").value;
+
+        if (usuario.length==0) {
+          alert("El nombre de usuario esta vacio, por favor ingrese un nombre");
+          return false;     
+        }
+
+        if (clave.length==0) {
+          alert("La contraseña esta vacia, por favor ingrese un clave de usuario validad");
+          return false;     
+        }
+        else 
+          return true;
+      }
+    </script>
+
+  </head>
+  <body>
+
+    <form method="post" action="#" id="formulario">
+      Ingrese su nombre:<br>
+      <input type="text" id="user" name="usuario" size="20">
+      <br>
+      Ingrese su clave:<br>
+      <input type="password" id="clave" name="clave" size="20">
+      <br>
+      <input type="submit" id="confirmar" name="confirmar" value="Confirmar">
+      <input type="reset" id="borrar" name="borrar" value="Borrar Datos">
+    </form>
+
+  </body>
+</html>

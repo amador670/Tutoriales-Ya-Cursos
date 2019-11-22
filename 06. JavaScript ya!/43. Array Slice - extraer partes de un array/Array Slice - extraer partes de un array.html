@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family:comic sans ms;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:orange;">Metodo .slice() de un Array</h1>
+  <p>Este metodo extrae un pedaso de una array, el devuelve los elementos seleccionados en una matriz. Mediante el método slice()  se selecciona los elementos que comienzan en el argumento start dado y termina end.</p>
+
+  <p style="color:red;">El utlimo resultado del array no se incluye, el argumento final dado no aparece. Nota: La matriz original no se cambiará.</p>
+  <hr>
+  <script type="text/javascript">
+   var vector=[0, 10, 20, 30, 40, 50];
+   var ciclo;
+
+   document.write("El vector original es: <br>"); 
+
+   for (ciclo=0; ciclo<vector.length; ciclo++) {
+    document.write(vector[ciclo] + "<br>");
+   }
+
+   var vector2=vector.slice(1, 5);//Si se colocan los valores negativos se muestran los vectores del final.
+
+   document.write("<hr>" + "El resultado del vector despues aplicar el metodo splice() es: <br>")
+   for(ciclo=0; ciclo<vector2.length; ciclo++){
+    document.write(vector2[ciclo] + "<br>");
+   }
+
+   document.write("<hr>");
+
+   var miNombre = [
+    "Maximo",
+    "Magdalena",
+    "Karen",
+    "Amador",
+    "Sarah"
+   ]
+   var amador = miNombre.slice(3, 4);
+
+   document.write("Mi nombre es:" + "<br>");
+   document.write(amador);
+
+
+  </script>
+
+ </body>
+</html>

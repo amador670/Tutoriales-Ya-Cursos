@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }
+  </style>
+
+ </head>    
+ <body>
+
+  <h1 style="color:orange">Expresiones Regulares. Repeticiones ~ 2° Ejemplo</h1>
+  <p id="mensajeIngresado" style="color:orange;"></p>
+  <hr style="color:orange;">
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sapiente animi consequatur sed aut ipsam reprehenderit iste, magnam possimus officiis, incidunt rem totam ut at aliquam consectetur soluta? Ipsam, iure.</p>
+
+  <p>Officia tenetur repellendus, atque harum explicabo excepturi laboriosam. Error ea dolorem architecto deleniti, neque libero maxime, adipisci, repellat accusantium a incidunt tenetur quia ex harum sunt. Culpa repellendus cupiditate facilis!</p>
+
+  <p>Itaque incidunt sit id quae praesentium maxime et corporis, fugiat repellat, unde nemo suscipit odio fugit nobis enim cum perferendis. Nulla quia possimus a sapiente ut asperiores rem natus eum.</p>
+
+  <script type="text/javascript">
+   function secuenciaCode(){
+    var mensaje=prompt("Ingrese un mensaje de 6 digitos que tenga numero y letras.", "Ejemp... 9A9M8R");
+    var secuencia=/^[0-9]{1}[a-zA-Z]{1}[0-9]{1}[a-zA-Z]{1}[0-9]{1}[a-zA-Z]$/;
+    //De esta forma me solicita que ingrese una secuencia de la siguiente forma 1A2B3C, es decir un numero y despues una letra 
+
+    if (secuencia.test(mensaje)){
+     alert("El mensaje fue ingresado de forma correcta");
+    }
+    else{
+     alert("El mensaje no fue ingresado correctamente");
+     return secuenciaCode();
+    }
+
+    document.getElementById("mensajeIngresado").innerHTML = "El mensaje ingresado fue: " + mensaje + "<br>";
+   }
+   secuenciaCode();
+  </script>
+
+ </body>
+</html>

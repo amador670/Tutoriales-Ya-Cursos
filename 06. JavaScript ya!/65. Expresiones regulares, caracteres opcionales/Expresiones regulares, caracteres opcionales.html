@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: left;
+    margin: 50px;
+    font-family: comic sans ms;
+   }
+  </style>
+
+ </head>    
+ <body>
+
+  <h1 style="color:#00c4ff">Expresiones regulares, caracteres opcionales</h1>
+  <p id="mensajeIngresado" style="color:#00c4ff"></p>
+  <hr style="color:blue"> 
+
+  <p>El carácter <b>^</b> al principio /^[]/ se usa para especificar que carácter, palabra o numero, sera el ingresado al principio, este se encarga de los primeros caracteres ingresados.</p>
+
+  <p>El carácter <b>$</b> al final /[]$/ se usa para especificar que carácter, palabra o numero, sera el ingresado al final, este se encarga de los últimos caracteres ingresados</p>
+
+  <h3 style="color:#00c4ff;margin:-10px 0px;">Extra:</h3>
+
+  <p>Para mostrar una alerta o mensaje solo para letras se usa [a-z], si queremos permitir también mayúsculas usamos [a-zA-Z]</p>    
+
+  <p>Para mostrar una alerta o mensaje solo para números se usa [0-9]</p>
+
+  <p>Si queremos que aparezca una alerta o mensaje para los signos y caracteres se usa /[\^$.*+?=!:|\\/()\[\]{}]/</p>
+
+  <p>Los caracteres que sean ingresado en secuencia, ejemplo [aeiou] especifican la secuencia que se cumplirá (mediante una alerta o mensaje). Sean al principio o al final estos especifican que al ingresar esos caracteres se ejecutara una determinada acción</p>
+
+  <script type="text/javascript">
+
+   function secuenciaAlfanumerica() { 
+    var mensaje=prompt("Ingrese un mensaje corto o secuencia de números");
+    var secuenciaNull;
+
+    if (mensaje==null){
+     alert("Por favor para continuar ingrese un mensaje");
+     return secuenciaAlfanumerica();
+    }
+
+    //Secuencia 1. Carácter alfabéticos
+    var secuencia1=/^["a-zA-Z]/;     
+    if (secuencia1.test(mensaje)){
+     alert("El mensaje ingresado es de carácter alfabético");
+    } 
+
+    //Secuencia 2. Caracteres que empiezan por vocales incluyendo acentuadas
+    var secuencia2=/^[aeiouAEIOUáéíóú]/;
+    if (secuencia2.test(mensaje)) {
+     alert("El mensaje ingresado empieza por una vocal"); 
+    }
+
+    //Secuencia 3. Caracteres wxyWXY 
+    var secuencia3=/[wxyWXY]/;
+    if (secuencia3.test(mensaje)){
+     alert("El mensaje ingresado contiene las siguientes letras w-x-y");
+    }
+
+    //Secuencia 4. Caracteres acentuados
+    var secuencia4=/[áéíóúÁÉÍÓÚ]/;
+    if (secuencia4.test(mensaje)){
+     alert("El mensaje ingresado contiene una(s) letra(s) con acento");
+    }
+
+    //Secuencia 5. Caracteres y signos ingresados
+    var secuencia5=/[\^$.*+?=!:|\\/()\[\]{}",]/; //Yo le agrege extra " y ,
+    if (secuencia5.test(mensaje)){
+     alert("El mensaje ingresado contiene caracteres y signos");
+    }
+    //Secuencia 6. Caracteres numéricos
+    var secuencia6=/^[0-9]/;
+    if (secuencia6.test(mensaje)){
+     alert("El mensaje ingresado es de carácter numérico");
+    }
+
+    //Secuencia 7. Caracteres numericos ingresados al final entre 7, 8 y 9
+    var secuencia7=/[7-9]$/; 
+    if (secuencia7.test(mensaje)){
+     alert("El mensaje contiene números entre el 7 y 9 al final");
+    }
+
+    document.getElementById("mensajeIngresado").innerHTML = "Usted ingreso la siguiente cadena de texto y/o numero: " + mensaje;
+   }
+
+   secuenciaAlfanumerica();
+  </script>
+
+ </body>
+</html>

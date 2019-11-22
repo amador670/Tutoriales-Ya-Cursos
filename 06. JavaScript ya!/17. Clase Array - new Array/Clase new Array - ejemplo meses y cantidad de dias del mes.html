@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prueba de JavaScript curso gratis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+        body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+  </style>
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        //Se crea un array con los datos que va a contener cada array "meses"
+        var meses;
+        meses = new Array();
+        meses[0] = 'Enero';
+        meses[1] = 'Febrero';
+        meses[2] = 'Marzo';
+        meses[3] = 'Abril';
+        meses[4] = 'Mayo';
+        meses[5] = 'Junio';
+        meses[6] = 'Julio';
+        meses[7] = 'Agosto';
+        meses[8] = 'Septiembre';
+        meses[9] = 'Octubre';
+        meses[10] = 'Noviembre';
+        meses[11] = 'Diciembre';
+        //Se crea un array con los datos que va a contener cada array "dias"
+        var diasDeCadaMes;
+        diasDeCadaMes = new Array();
+        diasDeCadaMes[0] = 31;
+        diasDeCadaMes[1] = 28;
+        diasDeCadaMes[2] = 31;
+        diasDeCadaMes[3] = 30;
+        diasDeCadaMes[4] = 31;
+        diasDeCadaMes[5] = 30;
+        diasDeCadaMes[6] = 31;
+        diasDeCadaMes[7] = 31;
+        diasDeCadaMes[8] = 30;
+        diasDeCadaMes[9] = 31;
+        diasDeCadaMes[10] = 30;
+        diasDeCadaMes[11] = 31;
+
+        //Se crea una funcion con el parametro (meses, dias)
+        function mostrarFecha(meses, diasDeCadaMes) {
+            var numeroMes = parseInt(prompt('Ingrese número de mes:', ''));
+
+            if (isNaN(numeroMes)) {
+                alert("Ingrese un caracter de tipo numerico");
+                //document.write("El valor ingresado no es parte de los meses del año, los caracteres de tipo alfabetico no estan permitidos."+"<br>");
+                return mostrarFecha(meses, diasDeCadaMes); //return retorna un valor, en este caso la funcion con ambos parametros, si quitamos el return no se volvera a mostrar el prompt, y podemos emplear el document.write. 
+            } else if (numeroMes < 1 || numeroMes > 12) {
+                alert("Ingrese un numero del meses de forma correcta");
+                //document.write("Ingrese un numero valido, el numero ingresado no pertenece a ningun mes."+"<br>");      
+                return mostrarFecha(meses, diasDeCadaMes); //De igual forma return retorna un valor, en este caso la funcion con los parametros para volver a ingresar los datos. 
+            } else {
+                document.write('El numero ingresado corresponde al mes: ' + meses[numeroMes - 1]);
+                document.write('<br>');
+                document.write('Y tiene ' + diasDeCadaMes[numeroMes - 1] + ' días');
+            }
+        }
+
+        //Al final mostramos la funcion fecha con ambos parametros
+        mostrarFecha(meses, diasDeCadaMes);
+    </script>
+
+    <h1 style="color:#00c4ff">Primera clase de new array (arreglos)</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora delectus quia rem porro molestiae repellat
+        beatae sit commodi quasi dolor ducimus consectetur totam nemo est, omnis vel minima. Commodi, eius!</p>
+
+    <p>Numquam, facilis, labore! Sed eos impedit, reiciendis quae molestias fugiat dignissimos soluta repudiandae
+        voluptate natus officia qui dicta fugit ea quas, hic autem! Eum vel aliquid ipsa, ad ut optio?</p>
+
+    <p>Harum veritatis officiis delectus fuga veniam. Porro, odit laborum cumque iusto, fugiat tempora blanditiis
+        temporibus, culpa nisi explicabo deleniti nihil aliquam, sequi impedit. Molestiae, unde, voluptas. Accusantium
+        consectetur, dolorum officia.</p>
+</body>
+
+</html>

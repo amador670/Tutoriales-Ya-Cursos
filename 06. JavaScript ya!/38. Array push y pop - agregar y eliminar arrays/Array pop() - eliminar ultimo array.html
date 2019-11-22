@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;  
+    font-family: comic sans ms;
+   }  
+  </style>
+
+ </head>
+ <body>
+
+  <h1 style="color:orange">Array .pop()</h1>
+  <p>El metodo array.pop(), reduce o elimina el ultimo elemento del vector y retorna el valor almacenado en dicha componente. El metodo .pop() elimina cualquier tipo de array, sea un array de tipo string, number, boolean o cualquier otro tipo de array.</p>
+
+  <p>"Si llamamos al método pop y el vector está vacío retorna el valor undefined".</p>
+  <hr>
+  <script type="text/javascript">
+   var vector=[];
+   vector.push(10, 20, 30, 40); 
+
+   document.write("Actualmente existen " + vector.length + " array ingresados de forma sencilla. " + "<br><br>");
+
+   //Agregamos el array usando el metodo .pop()
+   vector.pop();
+
+   document.write("El metodo Array.pop() elimina el ultimo arreglo. Actualmente hay " + vector.length + " array" + "<br><br>");
+
+   document.write("El metodo array.pop() elimina o anula la visualizacion del ultimo vector restante, no mostrara el vector eliminado. Para mostrar el ultimo vector solo añadimos array.pop() y automaticamente se mostrara. Ejemplo, ultimo vector restante: " + vector.pop());
+
+   document.write("<hr>");
+
+   var mifamilia = new Array(); 
+   mifamilia = ["Mamá", "Papá", "Karen", "Sarah", "Los Vecinos", "Yo :D"];
+
+   document.write("Mi familia es:" + "<br><br>");
+
+   for(i=0; i<mifamilia.length; i++){
+    document.write(i+1 + ".- "+ mifamilia[i] + "<br>");
+   }
+   document.write("<br>");
+
+   mifamilia.pop();
+   document.write("Todos son mi familia menos " + mifamilia.pop());
+
+  </script>
+
+
+
+ </body>
+</html>

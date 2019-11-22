@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de JavaScript curso gratis</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<style>
+    body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    }
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+var nombre;
+var nota;
+
+nombre=prompt("Ingrese el nombre del alumno:", "");
+nota=parseInt(prompt("Ingrese la nota del alumno:", ""));
+
+if (nota>=10) {
+	document.write(nombre +" el alumno aprobó con una nota de "+ nota +" puntos");
+} else {
+	document.write(nombre + " el alumno no aprobó, obtuvo una calificación de " + nota + " puntos");
+}
+</script>
+<br>
+<br>
+Aparece la instrucción if en el lenguaje JavaScript. La condición debe ir entre paréntesis. Si la condición se verifica verdadera se ejecuta todas las instrucciones que se encuentran encerradas entre las llaves de apertura y cerrado seguidas al if.
+<br><br>
+Para disponer condiciones en un if podemos utilizar alguno de los siguientes operadores relacionales:
+<br><br>
+<b>
+&gt;  mayor<br>
+&gt;= mayor o igual<br>
+&lt;  menor<br>
+&lt;= menor o igual<br>
+!= distinto<br>
+== igual<br>
+</b>
+<br><br>
+Siempre debemos tener en cuenta que en la condición del if deben intervenir una variable un operador relacional y otra variable o valor fijo.<br>
+Otra cosa que hemos incorporado es el operador + para cadenas de caracteres:
+<br><br>
+document.write(nombre+' esta aprobado con un '+nota);
+<br><br>
+Con esto hacemos más corto la cantidad de líneas de nuestro programa, recordemos que veníamos haciéndolo de la siguiente forma:
+<br><br>
+document.write(nombre);<br>
+document.write(' esta aprobado con un ');<br>
+document.write(nota);<br>
+
+</body>
+</html>

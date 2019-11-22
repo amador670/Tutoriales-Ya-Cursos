@@ -1,0 +1,12 @@
+Operador condicional ? and : 
+
+Este condicioanl es usado como modo de abreviar y hacer mas compacto el codigo, evitando de esta forma menos lineas de codigo. 
+
+El operador tiene la siguiente sintaxis:
+
+  condición ? instrucción 1 : instrucción 2;
+
+La condición es lo primero que indicamos a la izquierda del carácter "?". La condición siempre debe generar un resultado de tipo boolean (true/false)
+
+Si la condición se verifica verdadera se ejecuta la instrucción 1, que es la que se encuentra a la izquierda del carácter ":", en cambio si la condición se verifica false se ejecuta la instrucción 2.
+

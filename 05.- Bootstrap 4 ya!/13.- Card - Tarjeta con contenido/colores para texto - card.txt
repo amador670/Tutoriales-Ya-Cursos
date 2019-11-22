@@ -1,0 +1,9 @@
+
+    text-primary
+    text-success
+    text-info
+    text-warning
+    text-danger
+    text-secondary
+    text-dark
+    text-light

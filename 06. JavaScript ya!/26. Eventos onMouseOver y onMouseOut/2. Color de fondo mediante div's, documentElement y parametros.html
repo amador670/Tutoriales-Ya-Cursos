@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }  
+   .estilo {
+    border: 2px solid #00ceff;
+    padding: 7px;
+    display: inline-block;
+    background-color: #fff;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <script type="text/javascript">      
+   function pintarFondo(color) {
+    document.body.style.backgroundColor=color;
+
+    document.getElementsByClass('estilo')[0].style.background='#fff';
+    document.getElementsByClass('estilo')[1].style.background='#fff';
+    document.getElementsByClass('estilo')[2].style.background='#fff';
+
+   }
+  </script>
+
+  <div class="contenedor" style="text-align:center;">
+   <div class="estilo" onmouseover="pintarFondo('#00aa00')" onmouseout="pintarFondo('white')">Verde</div>
+   <div class="estilo" onmouseover="pintarFondo('#ffd31b')" onmouseout="pintarFondo('white')">Amarrillo</div>
+   <div class="estilo" onmouseover="pintarFondo('#e20000')" onmouseout="pintarFondo('white')">Rojo</div>
+  </div>
+
+  <h1 style="text-align:center;">Evento onMouseOver y onMouseOut</h1>
+
+  <p>onMouseOver se activa cuando el <b>cursor se mueve</b> sobre un elemento, automaticamente se activa la propiedad o funcion que contenga</p>
+
+  <p>onMouseOut es todo lo contrario, se activa cuando el <b>cursor es quitado</b> de un elemento</p>
+
+ </body>
+</html>

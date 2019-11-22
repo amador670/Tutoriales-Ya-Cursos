@@ -1,0 +1,40 @@
+Las variables que tenga adelante $_ significa que es una variable del servidor y permiten enviar parámetros a través de formularios o enlaces.
+
+-La diferencia entre POST y GET radica en la forma de enviar los datos, mientras que el método GET envía los datos usando la URL, el método POST los envía por la entrada HTTP del servidor
+____________________________________________________________________________
+-Como usar valores de GET y POST.
+*Para recoger los valores de un formulario donde se ha usado el método POST se debe escribir:
+$variable = $_POST[‘NOMBRE’];
+
+*Para recoger una variable enviada por el método GET o por medio de un enlace se hace lo siguiente:
+$variable = $_GET[‘NOMBRE‘];
+
+*Para recoger datos tanto $_GET, $_POST y $_COOKIE de distintos métodos de envíos se usa $_REQUEST que es una variable “superglobal” la cual encapsula todas las otras variables reservadas.
+
+REQUEST nos permite capturar variables enviadas desde formularios con los métodos GET o POST.  Ambos formularios enviarán la información (action) a una página común donde recuperaremos los datos usando $_REQUEST.
+
+Ej:
+$variable = $_REQUEST[‘NOMBRE‘];
+____________________________________________________________________________
+$_POST (link):
+Es una matriz asociativa de variables que fueron obtenidas por el método HTTP POST. Por lo general son enviadas por un formulario.
+
+Ej:
+El form tiene un input con id/name igual a Nombre, nosotros le ponemos el valor Pablo, luego hacemos print $_POST[‘nombre’], y obtendríamos Pablo
+-------------------------------------
+$_GET (link):
+Es una matriz asociativa de variables que fueron obtenidas mediante parametros URL. Son enviadas en la url:
+
+Ej:
+Tenemos www.venezuela.com?nombre=Pablo, ahí obtenemos si hacemos print $_GET[‘nombre’], obtendríamos Pablo.
+-------------------------------------
+$_COOKIE (link):
+Es una matriz asociativa de variables que fueron obtenidas mediante HTTP Cookies.
+
+Ej:
+Se tiene que setear una variable cookies antes, por ejemplo setcookie(“nombre”, “Pablo”); despues si hacemos print $_COOKIE[‘nombre’], obtendríamos Pablo.
+-------------------------------------
+$_REQUEST (link):
+
+Es una matriz asociativa de variables que contiene todo lo que contiene $_GET, $_POST y $_COOKIE.
+-------------------------------------
